@@ -117,7 +117,7 @@ const ProductGrid = ({ products }) => {
       {
         id:1,
         image: barbed,
-        title: 'ARCHITECTURAL GABION',
+        title: 'ARCHITECTURAL',
         description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
         link: '/unifence-kisen-shanti',
       },
