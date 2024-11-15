@@ -125,14 +125,14 @@ const Products = () => {
         id:1,
         image: surk,
         title: 'UNIFENCE SURAKSH',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Best choice for Security, Durability, Anti-Climb, Visibility, Strength, and Longevity.',
         link: '/unifence-suraksh',
       },
       {
         id:2,
         image: fen,
         title: 'UNIFENCE FENCADE',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Best choice for Style, Durability, Security, Customization, Weather Resistance, and Versatility!',
         link: '/unifence-fencade',
       },
     ];
@@ -155,31 +155,31 @@ const Applications = () => {
     const applications = [
       {
         id: 1,
-        text: "High-Security zones such as Prisons, Nuclear Facilities etc."
+        text: "Ensures perimeter security for various environments."
       },
       {
         id: 2,
-        text: "Demarcation of Agricultural or Industrial Premises"
+        text: "Protects assets and prevents unauthorized access."
       },
       {
         id: 3,
-        text: "Security cages and fences"
+        text: "Enhances safety in open and enclosed spaces."
       },
       {
         id: 4,
-        text: "Construction and Plaster Applications"
+        text: "Offers durability for long-term boundary solutions."
       },
       {
         id: 5,
-        text: "Warehouses, Factories, Societies and Farmhouses as Wall Tops"
+        text: "Adapts to different terrain and site requirements."
       },
       {
         id: 6,
-        text: "Sculpture Enclosures"
+        text: "Provides visibility while maintaining robust security."
       },
       {
         id: 7,
-        text: "Animal Enclosures"
+        text: "Suitable for both functional and aesthetic purposes."
       }
     ];
   
@@ -227,35 +227,35 @@ const Why = () => {
     const applications = [
       {
         id: 1,
-        text: "Adherence to International Standards in Quality"
+        text: "Built for long-lasting performance with superior materials."
       },
       {
         id: 2,
-        text: "State-Of-The-Art Coating Facilities"
+        text: "Designed to prevent climbing and unauthorized access."
       },
       {
         id: 3,
-        text: "High-Quality Welding"
+        text: "Resistant to cutting with commonly used tools."
       },
       {
         id: 4,
-        text: "Aesthetically Pleasing Finish"
+        text: "Protected against weather conditions with advanced coatings."
       },
       {
         id: 5,
-        text: "Exceptional Strength and Durability"
+        text: "Allows clear visibility, ideal for surveillance systems."
       },
       {
         id: 6,
-        text: "Corrosion Resistant"
+        text: "Enhances the appearance of the secured area."
       },
       {
         id: 7,
-        text: "High Value For Money"
+        text: "Simplifies installation with a modular, no-welding design."
       },
       {
         id: 8,
-        text: "Consistent Weld Strength and Weldmesh Sizes"
+        text: "Offers customization to meet diverse requirements."
       }
     ];
   
@@ -397,36 +397,32 @@ const FAQ = () => {
     
     const faqs = [
       {
-        question: "What is the line wire diameter of a barbed wire fence?",
-        answer: "Available in three configurations - 1.7 mm, 2 mm, 2.5 mm"
+        question: "Which factors make weldmesh fences more popular than other fence types?",
+        answer: "Welded wire fences are made from high-quality steel wires fused into a grid. Their tight structure makes them strong, climb-resistant, and more durable than woven fences. These fences can withstand more pressure, and their welded design provides resistance to cutting and breaking, making them easy to install and long-lasting."
       },
       {
-        question: "What is the barbed wire diameter?",
-        answer: "Available in three configurations - 1.6mm, 2mm & 2.5 mm"
+        question: "What kind of facilities and places can weldmesh fences be used at?",
+        answer: "Welded mesh fences are known for their strength due to their construction, which is why they are commonly used in high-security areas such as prisons and nuclear facilities. They are also widely employed for marking agricultural land, creating security enclosures, fencing construction sites, factories, warehouses, sculpture areas, and animal pens."
       },
       {
-        question: "What is the barb spacing?",
-        answer: "Our standard configurations are 75 mm & 100 mm. However, we have the capacity of manufacturing barb wire with a barb spacing of 125 mm, which is usually make to order."
+        question: "Is weldmesh fence more weather durable than others?",
+        answer: "Welded mesh fences are more weather-resistant than many other types, thanks to their durable finish and open design that allows air and wind to flow through. This reduces stress on the fence, even in areas with strong winds, helping it last longer with minimal maintenance."
       },
       {
-        question: "What IS standard do you manufacture?",
-        answer: "We manufacture IOWA standard barbed wires. However, we also have a BIS license with us."
+        question: "Are there any other usages of weld mesh apart from high-security zones?",
+        answer: "A key reason for the popularity of welded mesh fences is the visibility they offer, in addition to their strength and durability. The gaps between the grids allow clear visibility, making them ideal for use in places like sports stadiums, schools, and business premises."
       },
       {
-        question: "Do you have standardized packing for barbed wire?",
-        answer: "Yes, we do have proper packing standards for barb wires."
-      },
-      {
-        question: "Do you have uniform length for barbed wires?",
-        answer: "Yes, we do have 200 m of fixed length for the barbed wires."
+        question: "Can weldmesh be installed for beautification?",
+        answer: "In addition to their safety and durability, welded mesh fences can also be visually appealing, thanks to a variety of coatings and color options."
       }
     ];
   
     return (
       <div className="py-16 my-10 h-[75vh]">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-navy-900 mb-4">FAQ'S OF UNICO FENCE</h2>
-          <div className="w-28 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
+          <h2 className="text-4xl font-bold text-center text-navy-900 mb-4">FAQ'S</h2>
+          <div className="w-10 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
           <div className="max-w-3xl mx-auto">
             {faqs.map((faq) => (
               <div key={faq.question} className="mb-2">

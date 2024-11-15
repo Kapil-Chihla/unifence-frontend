@@ -251,7 +251,7 @@ useEffect(() => {
       >
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           <a href="/" className="block cursor-pointer hover:opacity-80 transition-opacity">
-            <img src={logo} alt="logo" className="h-10 w-25"/>
+            <img src={logo} alt="logo" className="h-14 w-25"/>
           </a>
           
           <nav className="flex space-x-8">

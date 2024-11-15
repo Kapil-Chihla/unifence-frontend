@@ -65,10 +65,7 @@ const PowerTransmission = () => {
       {/* First Text Section */}
       <div className="max-w-5xl mx-auto px-6 py-12">
         <p className="text-navy-800 leading-relaxed text-lg">
-          ShriAshutosh Group comes with over 20 years of experience in the power
-          transmission segment in India. Over 6,00,000 MT transmission line towers up to
-          765 kV and substation structures up to 400 kV line voltage have been supplied
-          to various electricity boards in the country, so far.
+        Unifence, the specialized division of Deepak Industries, offers a comprehensive range of products essential for power transmission and distribution infrastructure. This includes ground-based towers, roof-top towers and poles, and fence posts designed to support efficient and reliable electricity delivery.
         </p>
       </div>
 
@@ -148,19 +145,10 @@ const PowerTransmission = () => {
           {/* Second Text Section */}
           <div className="py-12 text-white relative z-10">
             <p className="mb-6">
-              ShriAshutosh has a world-class manufacturing facility at Raipur, Chhattisgarh.
-              This plant has a manufacturing capacity of 96,000 MT per year. With a well-engineered layout,
-              the plant is equipped to manufacture transmission line towers and all kinds of fabricated structures.
+            Unifence's ground-based towers are engineered to withstand harsh conditions, providing a sturdy foundation for high-voltage lines. The roof-top solutions enable power distribution in dense urban areas. Unifence's fence posts ensure secure infrastructure, safeguarding against unauthorized access.
             </p>
             <p className="mb-6">
-              The unit is equipped with a galvanizing bath made up of equivalent capacity.
-              The advanced technologies and the internal team of experts come together to
-              ensure quality-driven processes at every step.
-            </p>
-            <p>
-              With a state-of-the-art manufacturing facility, the ShriAshutosh Group is
-              equipped to deliver the best possible services. The plant is certified to meet
-              stringent quality standards that are ISO 9001 and ISO 14001 compliant.
+            Unifence maintains a nationwide network to deliver timely service. Its ISO certifications demonstrate a commitment to quality and safety standards. This expertise and customer-centric approach have solidified Unifence's position as a trusted partner in the power sector.
             </p>
           </div>
         </div>

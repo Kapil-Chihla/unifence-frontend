@@ -35,7 +35,7 @@ const Hero = () => (
       <h1 className="text-5xl mb-4 font-extrabold">Unifence Fencade</h1>
       <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
       <p className="text-2xl font-extralight mt-4">
-          A strong welded mesh system having anti climb & anti cut features along with high visibility making it ideal for medium and high security.
+          Unifence is a contemporary, aesthetically pleasing solution for all your demarcation requirements. It enhances the appearance of your property, providing a more refined look compared to traditional woven fencing options.
       </p>
       <Link
         to="/contact"
@@ -74,22 +74,14 @@ const Overview = () => (
         <div className="w-full md:w-1/2">
           <div className="mb-8">
             <h2 className="text-4xl font-bold text-navy-900">
-              UNICO provides technically smart, aesthetic, modular and sustainable demarcation solutions.
+            Unifence offers innovative, aesthetically pleasing, modular, and sustainable solutions for perimeter demarcation.
             </h2>
             <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mt-4"></div>
           </div>
           
           <div className="space-y-4">
             <p className="text-navy-800 text-lg leading-relaxed">
-              Perimeter demarcation is an important step to safeguard your property, building or limiting the perimeter.
-            </p>
-            
-            <p className="text-navy-800 text-lg leading-relaxed">
-              UNICO provides smart solutions of perimeter demarcation through uniquely designed fences with functionality & modularity married to an aesthetic outlook. Thereby providing a 'Simple yet Elegant' solution for all your demarcation needs.
-            </p>
-            
-            <p className="text-navy-800 text-lg leading-relaxed">
-              The entire range of UNICO family products are built on the values of AESTHETICS, FUNCTIONALITY, MODULARITY & SUSTAINABILITY.
+            Unifence delivers intelligent demarcation solutions through uniquely designed fences that blend functionality and modularity with a visually appealing look. This results in a "Simple yet Elegant" approach to all your boundary needs. Every product in the Unifence range is built upon the core principles of AESTHETICS, FUNCTIONALITY, MODULARITY, and SUSTAINABILITY.
             </p>
           </div>
         </div>
@@ -115,32 +107,32 @@ const Features = () => {
     {
       title: 'Aesthetic Appeal',
       image:f1,
-      description: 'The Mesh size of 76.2 X 12.7 mm makes it difficult to grip thus prohibiting any chances of climbing the fence.'
+      description: 'The uniformly spaced wire mesh creates an attractive pattern, adding aesthetic value to the perimeter it encloses.'
     },
     {
       title: 'No Nuts & Bolts',
       image:f2,
-      description: 'The dense mesh inhibits ingress of commonly available cutting tools like pliers which makes the fence difficult to cut'
+      description: 'Bell profile posts are specially engineered to secure the panels directly to the post, eliminating the need for any additional fixing components.'
     },
     {
       title: 'Multiple Colors Available',
       image:f3,
-      description: 'The fence although being so dense gives clear visibility so that it is CCTV friendly exposing the intruders'
+      description: 'A variety of colors are available to suit your style, enhancing the aesthetic appeal. Color options include Green, Red, Yellow, and White.'
     },
     {
       title: 'Weather Resistant',
       image:f4,
-      description: 'Made with Galvanized steel and then Powder coated providing the fence with superior corrosion & dust resistance'
+      description: 'Welded mesh is constructed from hot-dip galvanized steel wires and coated with powder, providing enhanced durability and weather resistance.'
     },
     {
       title: 'Customised Posts',
       image:f5,
-      description: 'Use of special fixtures makes the system modular and easy to install thus eliminating need for welding'
+      description: 'Various post options are available to suit site-specific requirements, including Bell Profile, SHS (Square Hollow Section), RHS (Rectangular Hollow Section), CHS (Circular Hollow Section), and H-Profile.'
     },
     {
       title: 'Bendtop (Optional)',
       image:f6,
-      description: 'Panels are manufactured with high weld strength imparting increased stability under impact.'
+      description: 'The fence can be customized with a bendtop option, making it ideal for internal demarcation, such as walkways and gardens.'
     }
   ];
 
@@ -166,39 +158,39 @@ const Features = () => {
 const Solutions = () => {
   const solutions = [
     {
-      title: "Industrial",
+      title: "Aesthetic Demarcation Solutions",
       image:s1,
-      description: "Perfect for factories, warehouses and industrial complexes"
+      description: "Use our modularly engineered Unifence demarcation fencing solutions to elegantly define the boundaries of your property."
     },
     {
-      title: "Commercial",
+      title: "Security Fencing Solutions",
       image:s2,
-      description: "Ideal for office buildings, retail spaces and business parks"
+      description: "Our industry-leading Unifence security fences offer the necessary delay and deterrence, making it extremely difficult to gain unauthorized access."
     },
     {
-      title: "Residential",
+      title: "Intrusion Detection",
       image:s3,
-      description: "Suitable for housing complexes and private residences"
+      description: "Our advanced Unifence Intrusion Detection Systems serve as the eyes and ears, enhancing security by quickly detecting any unauthorized activity."
     },
     {
-      title: "Industrial",
+      title: "Entrance & Access Control Solutions",
       image:s4,
-      description: "Perfect for factories, warehouses and industrial complexes"
+      description: "Control entry and exit points seamlessly with our manual and automatic entrance and access control solutions."
     },
     {
-      title: "Commercial",
+      title: "Landscaping",
       image:s5,
-      description: "Ideal for office buildings, retail spaces and business parks"
+      description: "Enhance your landscape with the rustic stone look by incorporating our architectural gabions."
     },
     {
-      title: "Residential",
+      title: "Surface Water Management",
       image:s6,
-      description: "Suitable for housing complexes and private residences"
+      description: "Enhance biodiversity, lower cooling costs, store rainwater, and control flash floods with Permavoid – our advanced surface water management solution."
     },
     {
-      title: "Residential",
+      title: "Facade",
       image:s7,
-      description: "Suitable for housing complexes and private residences"
+      description: "Transform your facades into living walls or custom graphics using our novel pixel facade solution"
     }
   ];
 
@@ -340,11 +332,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is the warranty of the product?",
-      answer: "Unico fences come with a 2 years warranty."
+      answer: "Unifence comes with a 2-year warranty, ensuring durability and peace of mind."
     },
     {
       question: "What are the colour options available in unico fence?",
-      answer: "Available in standard RAL colors."
+      answer: "The fencing is available in six vibrant color variants: White, Grey, Red, Yellow, Green, and Blue, providing a wide range of customization options."
     },
     {
       question: "What is the min & max height?",
@@ -352,20 +344,16 @@ const FAQ = () => {
     },
     {
       question: "What is the standard post center to center distance?",
-      answer: "The standard center to center distance is 2485mm."
+      answer: "The standard post center-to-center distance for the fence is 2560 mm."
     },
     {
       question: "Do your products require on-site welding, fabrication & painting?",
-      answer: "No, our products are designed for easy installation without any on-site welding or fabrication."
-    },
-    {
-      question: "Where is your plant located?",
-      answer: "Our manufacturing facility is located in India."
+      answer: "The fence requires only on-site assembly and installation, ensuring a hassle-free setup."
     }
   ];
 
   return (
-    <div className="py-16 h-[75vh]">
+    <div className="py-16 h-[70vh] md:h-[60vh]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-navy-900 mb-4">FAQ'S OF UNICO FENCE</h2>
         <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>

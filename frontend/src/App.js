@@ -19,6 +19,9 @@ import OtherWelded from "./Routes/OtherWelded.jsx";
 import WeldMesh from "./Routes/WeldMesh.jsx";
 import Wires from "./Routes/Wires.jsx";
 import Gabions from "./Routes/Gabions.jsx";
+import Architectural from "./Routes/Architectural.jsx";
+import WovenGabions from "./Routes/WovenGabions.jsx";
+import Rapid from "./Routes/Rapid.jsx";
 function App() {
   return (
     <Router>
@@ -43,6 +46,9 @@ function App() {
           <Route path="/weld-mesh-fence" element={<WeldMesh/>} />
           <Route path="/wires" element={<Wires/>} />
           <Route path="/gabions" element={<Gabions/>} />
+          <Route path="/architectural-gabions" element={<Architectural/>} />
+          <Route path="/woven-gabions" element={<WovenGabions/>} />
+          <Route path="/rapid-development-barrier" element={<Rapid/>} />
         </Routes>
       </div>
     </Router>

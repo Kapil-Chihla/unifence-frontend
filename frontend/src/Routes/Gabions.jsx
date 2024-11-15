@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from 'react';
 import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
-import fence from '../Assets/fenceadd.webp';
-import barbed from '../Assets/barbed.jpeg';
-import con from '../Assets/concertina.jpeg';
-import logo from '../Assets/logo.jpeg'
+import p1 from '../Assets/Gabions/p1.jpeg'
+import p2 from '../Assets/Gabions/p2.webp'
+import p3 from '../Assets/Gabions/p3.webp'
+import main from '../Assets/Gabions/main.jpeg'
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 
@@ -13,7 +13,7 @@ import CoolLoader from '../CoolLoader';
 const Hero = () => (
     <div className="relative h-[750px] w-full mt-10 md:mt-0">
     <img
-      src={fence}
+      src={main}
       alt="Contact us hero"
       className="w-full h-full object-cover brightness-50"
     />
@@ -116,24 +116,24 @@ const ProductGrid = ({ products }) => {
     const products = [
       {
         id:1,
-        image: barbed,
-        title: 'ARCHITECTURAL',
+        image: p1,
+        title: 'ARCHITECTURAL GABIONS',
         description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
-        link: '/unifence-kisen-shanti',
+        link: '/architectural-gabions',
       },
       {
         id:2,
-        image: con,
+        image: p2,
         title: 'WOVEN GABIONS',
         description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
-        link: '/unifence-concertina-coil',
+        link: '/woven-gabions',
       },
       {
         id:3,
-        image: con,
+        image: p3,
         title: 'RAPID DEVELOPMENT BARRIER',
         description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
-        link: '/unifence-concertina-coil',
+        link: '/rapid-development-barrier',
       },
     ];
   

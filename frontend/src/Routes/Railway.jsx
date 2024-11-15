@@ -65,10 +65,7 @@ const RailwayElectrification = () => {
       {/* First Text Section */}
       <div className="max-w-5xl mx-auto px-6 py-12">
         <p className="text-navy-800 leading-relaxed text-lg">
-          ShriAshutosh Group comes with over 20 years of experience in the power
-          transmission segment in India. Over 6,00,000 MT transmission line towers up to
-          765 kV and substation structures up to 400 kV line voltage have been supplied
-          to various electricity boards in the country, so far.
+        Unifence, the specialized division of Deepak Industries, offers a comprehensive range of products tailored for railway electrification infrastructure. This includes overhead line equipment (OLE) supports, masts and portals for overhead contact systems, cantilever structures to extend contact wires over tracks, and fence posts to secure railway corridors.
         </p>
       </div>
 
@@ -148,19 +145,13 @@ const RailwayElectrification = () => {
           {/* Second Text Section */}
           <div className="py-12 text-white relative z-10">
             <p className="mb-6">
-              ShriAshutosh has a world-class manufacturing facility at Raipur, Chhattisgarh.
-              This plant has a manufacturing capacity of 96,000 MT per year. With a well-engineered layout,
-              the plant is equipped to manufacture transmission line towers and all kinds of fabricated structures.
+            Unifence's solutions are engineered to withstand the harsh demands of railway environments, ensuring reliable power transmission for electric locomotives. The company's OLE supports and structures are designed to safely and efficiently hold catenary wires, the crucial component of overhead contact systems that supply electricity to trains.
             </p>
             <p className="mb-6">
-              The unit is equipped with a galvanizing bath made up of equivalent capacity.
-              The advanced technologies and the internal team of experts come together to
-              ensure quality-driven processes at every step.
+            Unifence's masts and portals provide the structural foundation for these overhead contact systems, enabling the suspension and distribution of contact wires across railway tracks. The company's cantilever structures further extend the reach of these contact wires, ensuring comprehensive coverage and connectivity.
             </p>
             <p>
-              With a state-of-the-art manufacturing facility, the ShriAshutosh Group is
-              equipped to deliver the best possible services. The plant is certified to meet
-              stringent quality standards that are ISO 9001 and ISO 14001 compliant.
+            Unifence maintains a nationwide presence, with a robust network of offices and partners, allowing for timely delivery and responsive customer service. The company's commitment to quality is reflected in its ISO certifications, demonstrating adherence to the highest standards of management and occupational health and safety.
             </p>
           </div>
         </div>

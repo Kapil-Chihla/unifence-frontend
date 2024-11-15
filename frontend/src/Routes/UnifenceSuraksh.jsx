@@ -138,32 +138,32 @@ const Features = () => {
     {
       title: 'Difficult to Climb',
       image: diff,
-      description: 'The Mesh size of 76.2 X 12.7 mm makes it difficult to grip thus prohibiting any chances of climbing the fence.'
+      description: 'The 76.2 x 12.7 mm mesh size prevents easy grip, effectively eliminating any possibility of climbing the fence.'
     },
     {
       title: 'Difficult to Cut',
       image: kf1,
-      description: 'The dense mesh inhibits ingress of commonly available cutting tools like pliers which makes the fence difficult to cut'
+      description: 'The dense mesh prevents the use of common cutting tools, such as pliers, making the fence difficult to cut.'
     },
     {
       title: 'High Visibility',
       image: kf3,
-      description: 'The fence although being so dense gives clear visibility so that it is CCTV friendly exposing the intruders'
+      description: 'Despite its density, the fence offers clear visibility, making it CCTV-friendly and allowing intruders to be easily spotted.'
     },
     {
         title: 'Long Life',
         image: long,
-        description: 'Made with Galvanized steel and then Powder coated providing the fence with superior corrosion & dust resistance and aesthetic finish'
+        description: 'Crafted from galvanized steel and powder-coated, the fence offers excellent corrosion and dust resistance, along with an aesthetically appealing finish.'
     },
     {
         title: 'Modular',
         image: mod,
-        description: 'Use of special fixtures makes the system modular and easy to install thus eliminating need for welding or fabrication during installation.'
+        description: 'Special fixtures make the system modular and easy to install, eliminating the need for welding or fabrication.'
     },
     {
         title: 'Strong',
         image: kf5,
-        description: 'Panels are manufactured with high weld strength imparting increased stability under impact.'
+        description: 'The panels are made with high weld strength, providing enhanced stability and durability under impact.'
     }
 ];
 
@@ -191,11 +191,11 @@ const Applications = () => {
     const applications = [
       {
         title: 'Demarcation',
-        description: 'Creates clear boundary definition with superior visibility while maintaining security. The modular design with high-strength welded mesh panels provides reliable property division, while the galvanized and powder-coated finish ensures long-lasting demarcation that resists corrosion and weathering.'
+        description: 'Establishes clear boundaries with excellent visibility while ensuring security. The modular design, featuring high-strength welded mesh panels, offers reliable property division, while the galvanized and powder-coated finish guarantees long-lasting protection against corrosion and weathering.'
       },
       {
         title: 'Perimeter Security',
-        description: 'A strong welded mesh system having anti-climb & anti-cut features along with high visibility making it ideal for medium and high security. The 76.2 x 12.7mm mesh design prevents climbing attempts while supporting CCTV monitoring, perfect for securing critical areas.'
+        description: 'A robust welded mesh system with anti-climb and anti-cut features, offering high visibility, making it ideal for medium to high-security zones. The 76.2 x 12.7mm mesh design effectively prevents climbing attempts while enabling seamless CCTV monitoring, making it perfect for protecting critical areas.'
       }
     ];
   
@@ -236,11 +236,7 @@ const VariantSection = () => {
                 <div className="h-1 w-32 bg-gradient-to-r from-green-600 to-cyan-400 mt-4"></div>
               </div>
               <p className="text-navy-800 text-lg leading-relaxed">
-                Garrison fence is a variant of A-1 Kavach® designed keeping the defence forces in mind. It
-                has bigger and stronger circular hollow section as poles. It has a three panel design instead
-                of one which aids installation on poles as well as easy transportation. Specially designed Y-
-                arms support high deterrent large diameter concertina coils to dissuade pole vaulting and
-                climbing over from top.
+                The Garrison fence is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
               </p>
             </div>
             
@@ -286,7 +282,7 @@ const UniferenceSuraksh = () => {
         <h1 className="text-5xl font-extrabold">Unifence Suraksh</h1>
         <div className="h-1 w-32 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mt-4"></div>
         <p className="text-2xl font-extralight mt-4">
-          A strong welded mesh system having anti climb & anti cut features along with high visibility making it ideal for medium and high security.
+          A robust welded mesh system with anti-climb and anti-cut features, offering high visibility, making it perfect for medium to high-security applications.
         </p>
         <Link
           to="/contact"

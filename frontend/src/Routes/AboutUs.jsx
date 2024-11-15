@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
 import s1 from '../Assets/s1.jpg';
+import s3 from '../Assets/s3.jpg';
 import CoolLoader from '../CoolLoader';
 
 const AboutUs = () => {
@@ -41,17 +42,11 @@ const AboutUs = () => {
       {/* First Text Section */}
       <div className="max-w-5xl mx-auto px-6 py-12">
         <p className="text-navy-800 leading-relaxed">
-          We are living in an age of remarkable progress, where invention and human 
-          ingenuity are driving unprecedented advances in global development. 
-          Technology has a critical role in this transformation, but so do the materials 
-          that build our world. As the leading steel conglomerate, we have an inherent 
-          stake in this and clear responsibility.
-        </p>
-        <p className="mt-6 text-navy-800 leading-relaxed">
-          Steel is as relevant as ever to the future success of our world. As one of the 
-          only materials to be completely reusable and recyclable, it will play a critical 
-          role in building the circular economy of the future. Steel will continue to evolve, 
-          becoming smarter and increasingly sustainable.
+         Deepak Industries is an ISO 9001:2015 and ISO 45001:2008 certified
+         technology company founded in 2006. Led by visionary 
+         Director Mr. Deepak Goyal, the company offers a comprehensive 
+         range of products and services in Telecommunication, Solar Solutions, 
+         and Security & Surveillance.
         </p>
       </div>
 
@@ -122,7 +117,7 @@ const AboutUs = () => {
           {/* Second Image */}
           <div className="w-full h-[400px] shadow-xl">
             <img 
-              src={s1} 
+              src={s3} 
               alt="Industrial worker" 
               className="w-full h-full object-cover"
             />
@@ -131,24 +126,20 @@ const AboutUs = () => {
           {/* Second Text Section */}
           <div className="py-12 text-white relative z-10">
             <p className="mb-6">
-              At Unifence our goal is to help build a better world with smarter steels. 
-              Steels made using innovative processes that are more efficient, use less 
-              energy, and emit significantly less carbon. Our brand family includes cleaner, 
-              stronger, and reusable products, ranging from raw materials to finished steel 
-              products. Through our nationwide marketing network, these premium products 
-              satisfy the market demand, and are extensively applied to industries such as 
-              energy, transportation, and construction.
+            Headquartered in Delhi, Deepak Industries operates 
+            nationwide through a robust network of offices and reliable partners. 
+            The company's mission is to exceed customer expectations by delivering top-notch, 
+            intelligent, and converged communication solutions tailored to individual client needs. 
+            Deepak Industries is driven by a clear vision to be recognized as an industry leader, 
+            admired for its unmatched support and reliability.
             </p>
             <p className="mb-6">
-              We foster the culture of innovation by putting research and development at the 
-              heart of our operations. We have some of the best and brightest people in the 
-              business – engineers who work for us because they get to tackle the most 
-              complex of problems.
-            </p>
-            <p>
-              With more than 1,000 employees, we are more than just a company. We are a 
-              community. We are driven by an entrepreneurial spirit and a passion for 
-              excellence, never accepting that the limits of our material have been achieved.
+            The company's motto, "No Compromise," underscores its unwavering commitment to 
+            excellence and ethical standards. This guiding principle fuels Deepak's continuous 
+            innovation and dedication to people development, resulting in superior products and services. 
+            Deepak Industries' efficient customer service and pioneering approach have earned the trust 
+            and confidence of its clients, 
+            solidifying its position as a premier technology solutions provider in the market.
             </p>
           </div>
         </div>

@@ -23,11 +23,11 @@ const SpeechCards = () => {
   const speeches = [
     {
       title: "CEO's Word",
-      content: "Our vision is to create innovative solutions that transform industries while maintaining our commitment to sustainability and excellence. As we move forward, our focus remains on delivering value to our stakeholders and making a positive impact in the communities we serve."
+      content: "Deepak Industries is built on a solid foundation of core values and service ethics, allowing us to enthusiastically exceed the expectations of our clients and remain the leading service provider of choice."
     },
     {
       title: "Director's Word",
-      content: "We're dedicated to fostering a culture of innovation and collaboration. Our team's dedication and expertise continue to drive our success, and we're excited about the opportunities that lie ahead as we expand our horizons and reach new milestones."
+      content: "Our goal is to earn customers' trust and confidence by delivering the best solutions in our strategic business portfolios. Our efficient customer service has established us as a pioneer and innovator in the industry."
     }
   ];
 
