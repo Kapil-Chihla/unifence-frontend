@@ -18,30 +18,46 @@ import ApplicationsBlock from '../ApplicationsBlock';
 // Hero Section Component
 
 const Hero = () => (
-    <div className="relative h-[750px] w-full mt-10 md:mt-0">
+  <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[750px] w-full mt-10 md:mt-0">
     <img
       src={main}
       alt="Contact us hero"
-      className="w-full h-full object-cover brightness-50 opacity-100"
+      className="w-full h-full object-cover brightness-50"
     />
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 className="text-5xl mb-4 font-extrabold">Unifence Kisen Shanti</h1>
-      <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-      <p className="text-2xl font-robotoCondensed font-extralight mt-4">
-          A strong welded mesh system having anti climb & anti cut features along with high visibility making it ideal for medium and high security.
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
+      Unifence Kisen Shanti
+      </h1>
+      <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
+      Unifence takes pride in presenting the traditional Unifence Kisen Kanti in a fresh, innovative form – Unifence Kisen Kanti! Featuring Red Barbs for improved visibility, Unifence Kisen Kanti is backed by our unparalleled quality assurance.
       </p>
       <Link
         to="/contact"
-        className="relative mt-10 px-8 py-3 border-2 border-primary-turquoise text-primary-lightgreen font-bold text-lg rounded-2xl transition-colors duration-300 group overflow-visible inline-block"
+        className="relative inline-block mt-4 sm:mt-6 md:mt-8 lg:mt-10 
+                  px-4 sm:px-6 md:px-8 
+                  py-1.5 sm:py-2 md:py-3
+                  border border-primary-turquoise 
+                  text-primary-lightgreen 
+                  text-sm sm:text-base md:text-lg
+                  font-medium sm:font-bold 
+                  rounded-xl sm:rounded-2xl 
+                  transition-colors duration-300 
+                  group overflow-visible"
       >
         Enquire Now
-        <span className="absolute top-1/2 right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-20px]">
+        <span className="absolute top-1/2 right-[-8px] sm:right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-16px] sm:group-hover:right-[-20px]">
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
             data-icon="long-arrow-alt-right"
-            className="w-6 h-6 text-primary-turquoise group-hover:text-primary-turquoise"
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary-turquoise group-hover:text-primary-turquoise"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -62,171 +78,189 @@ const Hero = () => (
 const Features = () => {
   const features = [
     {
-      title: 'Difficult to Climb',
+      title: 'Strong',
       image:f1,
-      description: 'The Mesh size of 76.2 X 12.7 mm makes it difficult to grip thus prohibiting any chances of climbing the fence.'
+      description: 'Double-strand high-tensile wire provides exceptional resistance to cutting, ensuring security against tools like pliers. These barbed wires maintain their shape and integrity year-round, unaffected by temperature fluctuations.'
     },
     {
-      title: 'Difficult to Cut',
+      title: 'Increased Security & Visibility',
       image:f2,
-      description: 'The dense mesh inhibits ingress of commonly available cutting tools like pliers which makes the fence difficult to cut'
-    },
-    {
-      title: 'High Visibility',
-      image:f3,
-      description: 'The fence although being so dense gives clear visibility so that it is CCTV friendly exposing the intruders'
+      description: 'The 4-point IOWA barbs securely lock onto the double-strand twisted wires, creating a formidable barrier. These red barbs enhance visibility, reducing the risk of animal collisions and minimizing potential harm to their hides.'
     },
     {
       title: 'Long Life',
+      image:f3,
+      description: 'Crafted from premium 275 GSM heavy galvanized wire, these high-tensile twisted barbed wires ensure longevity. For maximum corrosion resistance, consider ECOZAL (Zn 90% + Al 10) coating. Stainless steel wires (304 or 316 grade) are ideal for coastal environments. Surakshak Plus red PVC barbs protect critical areas, extending the wires lifespan and improving visibility.'
+    },
+    {
+      title: 'HASSLE-FREE INSTALLATION',
       image:f4,
-      description: 'Made with Galvanized steel and then Powder coated providing the fence with superior corrosion & dust resistance'
+      description: 'Installing a barbed wire fence is a straightforward process. Once the fence posts are in place, the barbed wire is simply stretched and secured using brace caps. For Y-arm and concrete posts, the wire is threaded through designated holes. Overall, barbed wire fences offer a quick and efficient fencing solution.'
     },
     {
-      title: 'Modular',
+      title: 'COST-EFFECTIVENESS',
       image:f5,
-      description: 'Use of special fixtures makes the system modular and easy to install thus eliminating need for welding'
+      description: 'A barbed wire fence is a budget-friendly way to secure any property. The fencing materials, installation process, and maintenance requirements are all relatively inexpensive.'
     },
     {
-      title: 'Strong',
+      title: 'VERSATILITY',
       image:f6,
-      description: 'Panels are manufactured with high weld strength imparting increased stability under impact.'
+      description: 'Barbed wire fences offer exceptional value, making them a versatile choice for diverse properties, including agricultural, industrial, residential, and commercial sites.'
     }
   ];
 
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl mb-4 font-bold">Features</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
-          ))}
-        </div>
+    <div className="py-8 sm:py-12 md:py-16">
+      <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-xl sm:text-3xl md:text-4xl mb-2 mb:mb-4 font-bold tracking-wider">
+          FEATURES
+        </h2>
+        <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto px-4 sm:px-5 md:px-6">
+        {features.map((feature, index) => (
+          <FeatureCard
+            key={index}
+            title={feature.title}
+            image={feature.image}
+            description={feature.description}
+          />
+        ))}
       </div>
     </div>
   );
 };
 const GalvanizedTable = () => (
-    <div className="mb-12">
-      <h2 className="text-4xl font-bold text-white mb-6">Galvanized Barbed Wire</h2>
-      <table className="w-full border-collapse border border-white">
+  <div className="mb-8 md:mb-12">
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6">Galvanized Barbed Wire</h2>
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse border border-white min-w-[768px]">
         <thead>
           <tr>
-            <th className="border border-white text-center font-extrabold text-white p-4 w-1/3">Parameter</th>
-            <th className="border border-white text-center font-extrabold text-white p-4 w-1/3">Specifications</th>
-            <th className="border border-white text-center font-extrabold text-white p-4 w-1/3">Standard</th>
+            <th className="border border-white text-center font-extrabold text-white p-2 md:p-4 w-1/3 text-sm md:text-base">Parameter</th>
+            <th className="border border-white text-center font-extrabold text-white p-2 md:p-4 w-1/3 text-sm md:text-base">Specifications</th>
+            <th className="border border-white text-center font-extrabold text-white p-2 md:p-4 w-1/3 text-sm md:text-base">Standard</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-white text-center text-white p-4">Diameter</td>
-            <td className="border border-white text-center text-white p-4">2/ 2.50 mm</td>
-            <td className="border border-white text-center text-white p-4">BS EN 10218-2</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Diameter</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">2/ 2.50 mm</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">BS EN 10218-2</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">No. of Barb points</td>
-            <td className="border border-white text-center text-white p-4">2.0 points & 4.0 points</td>
-            <td rowSpan="3" className="border border-white text-center text-white p-4">ASTM A121</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">No. of Barb points</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">2.0 points & 4.0 points</td>
+            <td rowSpan="3" className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">ASTM A121</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">Pitch</td>
-            <td className="border border-white text-center text-white p-4">75mm, 100mm, 125mm & 150mm</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Pitch</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">75mm, 100mm, 125mm & 150mm</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">Tensile Strength</td>
-            <td className="border border-white text-center text-white p-4">350 N/mm2 - 550 N/mm2</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Tensile Strength</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">350 N/mm2 - 550 N/mm2</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">Roll Length</td>
-            <td className="border border-white text-center text-white p-4">200 Meters</td>
-            <td className="border border-white text-center text-white p-4"></td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Roll Length</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">200 Meters</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base"></td>
           </tr>
         </tbody>
       </table>
     </div>
-  );
-  
-  const PVCTable = () => (
-    <div>
-      <h2 className="text-4xl font-bold text-white mb-6">PVC Coated Barbed Wire</h2>
-      <table className="w-full border-collapse border border-white">
+  </div>
+);
+
+const PVCTable = () => (
+  <div>
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6">PVC Coated Barbed Wire</h2>
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse border border-white min-w-[768px]">
         <thead>
           <tr>
-            <th className="border border-white text-center font-extrabold text-white p-4 w-1/3">Parameter</th>
-            <th className="border border-white text-center font-extrabold text-white p-4 w-1/3">Specifications</th>
-            <th className="border border-white text-center font-extrabold text-white p-4 w-1/3">Standard</th>
+            <th className="border border-white text-center font-extrabold text-white p-2 md:p-4 w-1/3 text-sm md:text-base">Parameter</th>
+            <th className="border border-white text-center font-extrabold text-white p-2 md:p-4 w-1/3 text-sm md:text-base">Specifications</th>
+            <th className="border border-white text-center font-extrabold text-white p-2 md:p-4 w-1/3 text-sm md:text-base">Standard</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-white text-center text-white p-4">Diameter</td>
-            <td className="border border-white text-center text-white p-4">
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Diameter</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">
               ID-1.40/OD-2.00mm &<br />
               ID-1.60/OD-2.50mm
             </td>
-            <td className="border border-white text-center text-white p-4">BS EN 10218-2</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">BS EN 10218-2</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">No. of Barb points</td>
-            <td className="border border-white text-center text-white p-4">2.0 points & 4.0 points</td>
-            <td rowSpan="3" className="border border-white text-center text-white p-4">ASTM A121</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">No. of Barb points</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">2.0 points & 4.0 points</td>
+            <td rowSpan="3" className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">ASTM A121</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">Pitch</td>
-            <td className="border border-white text-center text-white p-4">75mm, 100mm, 125mm & 150mm</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Pitch</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">75mm, 100mm, 125mm & 150mm</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">Tensile Strength</td>
-            <td className="border border-white text-center text-white p-4">350 N/mm2 - 550 N/mm2</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Tensile Strength</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">350 N/mm2 - 550 N/mm2</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">PVC Coating</td>
-            <td className="border border-white text-center text-white p-4">As per requirement</td>
-            <td className="border border-white text-center text-white p-4">BS EN 10245</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">PVC Coating</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">As per requirement</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">BS EN 10245</td>
           </tr>
           <tr>
-            <td className="border border-white text-center text-white p-4">Roll Length</td>
-            <td className="border border-white text-center text-white p-4">200 Meters</td>
-            <td className="border border-white text-center text-white p-4"></td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">Roll Length</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base">200 Meters</td>
+            <td className="border border-white text-center text-white p-2 md:p-4 text-sm md:text-base"></td>
           </tr>
         </tbody>
       </table>
     </div>
-  );
-  
-  const SpecificationsTable = () => {
-    return (
-      <div className="relative  bg-black h-full isolate">
-        {/* Background container that's only as tall as the specifications section */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url(${s2})`,
-            backgroundAttachment: 'fixed',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.5)',
-            zIndex: -1
-          }}
-        />
-          
-        {/* Content */}
-        <div className="relative z-10 h-full p-12">
-          <h1 className="text-4xl font-bold text-white text-center mb-6">
-            SPECIFICATION OF BARBED WIRE FENCE
-          </h1>
-          <div className="w-36 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-12"></div>
-          <div className="max-w-5xl mx-auto space-y-12">
-            <GalvanizedTable />
-            <PVCTable />
-          </div>
+  </div>
+);
+
+const SpecificationsTable = () => {
+  return (
+    <div className="relative bg-black min-h-screen py-16 md:py-24 isolate">
+      {/* Background container */}
+      <div 
+        className="absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: `url(${s2})`,
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.5)',
+          zIndex: -1
+        }}
+      />
+      
+      {/* Content */}
+      <div className="relative z-10 px-4 md:px-12">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-4 md:mb-6">
+          SPECIFICATION OF BARBED WIRE FENCE
+        </h1>
+        
+        {/* Underline */}
+        <div className="w-24 md:w-36 h-0.5 md:h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8 md:mb-12"></div>
+        
+        {/* Tables Container */}
+        <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
+          <GalvanizedTable />
+          <PVCTable />
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 // FAQ Section Component
 
@@ -261,38 +295,66 @@ const FAQ = () => {
     ];
   
     return (
-      <div className="py-16 my-10 h-[75vh]">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-navy-900 mb-4">FAQ'S OF UNICO FENCE</h2>
-          <div className="w-28 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-          <div className="max-w-3xl mx-auto">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="mb-2">
-                <button
-                  className={`w-full px-6 py-4 text-left flex items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-200 ${
-                    openQuestion === faq.question ? 'rounded-t-lg' : 'rounded-lg'
-                  }`}
-                  onClick={() => setOpenQuestion(openQuestion === faq.question ? null : faq.question)}
-                >
-                  <div className="w-8 h-8 flex items-center justify-center bg-gradient-to-r from-green-600 to-cyan-400 rounded mr-4">
-                    <ChevronDown
-                      className={`w-6 h-6 text-white transform transition-transform duration-200 ${
-                        openQuestion === faq.question ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </div>
-                  <span className="text-white font-medium">{faq.question}</span>
-                </button>
-                {openQuestion === faq.question && (
-                  <div className="bg-gray-800 px-6 py-4 rounded-b-lg">
-                    <p className="text-white pl-12">{faq.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+      <div className="py-8 sm:py-12 md:py-16 my-6 sm:my-8 md:my-10 min-h-fit lg:h-[75vh]">
+      <div className="container mx-auto px-4">
+        {/* Heading Section */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-navy-900 mb-3 sm:mb-4">
+          FAQ'S
+        </h2>
+        <div className="w-8 sm:w-9 md:w-10 
+                    h-0.5 sm:h-[3px] md:h-1 
+                    bg-gradient-to-r from-green-600 to-cyan-400 
+                    mx-auto 
+                    mb-6 sm:mb-7 md:mb-8">
+        </div>
+    
+        {/* FAQ Items Container */}
+        <div className="max-w-3xl mx-auto">
+          {faqs.map((faq) => (
+            <div key={faq.question} className="mb-2 sm:mb-3">
+              <button
+                className={`w-full px-4 sm:px-5 md:px-6 
+                          py-3 sm:py-3.5 md:py-4 
+                          text-left flex items-center 
+                          bg-gray-800 hover:bg-gray-700 
+                          transition-colors duration-200 
+                          ${openQuestion === faq.question ? 'rounded-t-lg' : 'rounded-lg'}`}
+                onClick={() => setOpenQuestion(openQuestion === faq.question ? null : faq.question)}
+              >
+                {/* Icon Container */}
+                <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 
+                            flex items-center justify-center 
+                            bg-gradient-to-r from-green-600 to-cyan-400 
+                            rounded 
+                            mr-3 sm:mr-3.5 md:mr-4">
+                  <ChevronDown
+                    className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 
+                              text-white transform transition-transform duration-200 
+                              ${openQuestion === faq.question ? 'rotate-180' : ''}`}
+                  />
+                </div>
+                {/* Question Text */}
+                <span className="text-white font-medium text-sm sm:text-base md:text-lg">
+                  {faq.question}
+                </span>
+              </button>
+              
+              {/* Answer Panel */}
+              {openQuestion === faq.question && (
+                <div className="bg-gray-800 
+                              px-4 sm:px-5 md:px-6 
+                              py-3 sm:py-3.5 md:py-4 
+                              rounded-b-lg">
+                  <p className="text-white pl-9 sm:pl-10 md:pl-12 text-sm sm:text-base">
+                    {faq.answer}
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
+    </div>
     );
 };
 
@@ -310,49 +372,59 @@ const Layout = ({ children }) => (
 
 
 const Applications = () => {
-  const features = [
+  const applications = [
     {
       title: "Infrastructure Project",
-      description: "Barbed Wire Fences are installed on Highways and along Railway Tracks amongst other infrastructure projects for enhanced protection."
+      description: "Barbed wire fences are widely used to secure critical infrastructure, including highways and railway tracks."
     },
     {
       title: "Agricultural Projects",
-      description: "All types of agricultural lands right from cropland to orchards, from groves to vineyards, from nurseries to ornamental horticulture areas make use of Barbed Wire Fences to protect the property against intruders and wildlife."
+      description: "Barbed wire fences safeguard a wide range of agricultural properties, including croplands, orchards, groves, vineyards, nurseries, and ornamental horticulture areas, protecting them from both intruders and wildlife."
     },
     {
       title: "Commercial and Industrial Projects",
-      description: "Barbed Wire Fences are installed in commercial or industrial premises, to safeguard them from wandering strays as well as from intruders."
+      description: "To deter both stray animals and intruders, barbed wire fences are commonly installed around commercial and industrial properties."
     },
     {
       title: "Prisons and Jails",
-      description: "In most cases, Prison Walls are adorned with Barbed Wire fencing as a way to check prisoners from attempting illicit escapes."
+      description: "Barbed wire fences are a common security measure on prison walls, discouraging escape attempts."
     },
     {
       title: "Military",
-      description: "Barbed Wire Fences are largely used on training grounds for armed personnel, as this type of fencing helps simulate various combat conditions. Moreover, this fencing is also used in numerous team building exercises."
+      description: "Barbed wire fences create challenging training environments for armed personnel, simulating real-world combat conditions and fostering teamwork."
     }
   ];
-
+  const getGridClasses = () => {
+    if (applications.length <= 2) {
+      return `
+        grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8
+        ${applications.length === 1 ? 'max-w-md' : 'max-w-2xl'}
+        mx-auto
+      `;
+    }
+    return "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8";
+  };
   return (
-    <div className="py-16">
+    <div className="py-8 md:py-12">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-navy-900 mb-4">Applications</h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-        <p className="text-xl text-navy-800 mx-auto">
-        Chain Link Fence derives its strength from the galvanised steel wire, while its flexibility can be attributed to its highly coveted diamond pattern. 
-        Add to its various gauges of mesh fabric, different colours and optimal height and these Chain Link Fences can be used for a wide range of applications!
-        </p>
+      <div className="text-center mb-8 md:mb-12 lg:mb-16">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 font-bold text-navy-900">
+          APPLICATIONS
+        </h2>
+        <div className="w-20 sm:w-28 md:w-32 
+              h-0.5 sm:h-[3px] md:h-1 
+              bg-gradient-to-r from-green-600 to-cyan-400 
+              mx-auto 
+              mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+    </div>
       </div>
       
-      {/* Feature Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, index) => (
+      <div className={getGridClasses()}>
+        {applications.map((application, index) => (
           <ApplicationsBlock
             key={index}
-            title={feature.title}
-            description={feature.description}
+            title={application.title}
+            description={application.description}
           />
         ))}
       </div>
@@ -364,51 +436,59 @@ const Applications = () => {
 
 const WhySurakshak = () => {
     const features = [
-      "Red Barbs for Improved Visibility",
-      "Available in Galvanised as well as PVC Coated Finishes",
-      "Corrosion and Rust Resistant Wires",
-      "Smooth Finish for Enhanced Aesthetic Appeal",
-      "Quick and Easy Installation",
-      "Long-Lasting Shine",
-      "Assured Quality - Coating thicknes & Tensile Strength Checked Before Dispatch"
+      "Exceptional durability and long-lasting performance.",
+      "Superior resistance to rust and corrosion.",
+      "High visibility for enhanced security and safety.",
+      "Economical and budget-friendly solution.",
+      "Simple and efficient installation process.",
+      "Versatile application for various property types.",
+      "Reliable and trusted product from a reputable brand."
     ];
   
     return (
-      <div className="relative my-24">
-        {/* Main Content Container */}
-        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-          {/* Title */}
-          <h1 className="text-4xl font-bold text-navy-900 text-center mb-4">
-            WHY SURAKSHAK BARBED WIRE FENCE?
-          </h1>
-          <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-14"></div>
-          {/* Features and Image Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Features List */}
-            <div className="space-y-6">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start font-medium text-navy-800">
-                  <span className="text-2xl mr-4 mt-1">→</span>
-                  <span className={`text-lg ${
-                    index === features.length - 1 ? 'text-left max-w-xl' : ''
-                  }`}>
-                    {feature}
-                  </span>
-                </div>
-              ))}
+      <div className="relative my-8 sm:my-12">
+    {/* Main Content Container */}
+    <div className="max-w-7xl mx-auto px-4 py-8 sm:py-12 md:py-14 lg:py-16 sm:px-6 lg:px-8">
+      {/* Title */}
+      <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-navy-900 text-center mb-3 sm:mb-4">
+        WHY BARBED WIRE FENCE?
+      </h1>
+      <div className="w-24 sm:w-28 md:w-32 h-0.5 sm:h-[3px] md:h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-14"></div>
+
+      {/* Features and Image Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+        {/* Features List */}
+        <div className="space-y-4 sm:space-y-5 md:space-y-6">
+          {features.map((feature, index) => (
+            <div 
+              key={index} 
+              className="flex items-start font-medium text-navy-800"
+            >
+              <span className="text-sm sm:text-xl md:text-2xl mr-3 sm:mr-4 mt-0.5 sm:mt-1">
+                →
+              </span>
+              <span 
+                className={`text-base sm:text-lg md:text-lg ${
+                  index === features.length - 1 ? 'text-left max-w-xl' : ''
+                }`}
+              >
+                {feature}
+              </span>
             </div>
-  
-            {/* Image */}
-            <div className="order-first lg:order-last">
-              <img 
-                src={Long}
-                alt="Barbed Wire Fence"
-                className="w-full rounded-lg shadow-lg object-cover"
-              />
-            </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Image Container */}
+        <div className="order-first lg:order-last">
+          <img 
+            src={Long}
+            alt="Barbed Wire Fence"
+            className="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[600px] rounded-lg shadow-lg object-cover"
+          />
         </div>
       </div>
+    </div>
+  </div>
     );
   };
 
@@ -433,12 +513,12 @@ const KishenShanti = () => {
       <div className="bg-white">
         <Hero />
         <Features />
-        <FAQ />
         <div className="relative">
           <SpecificationsTable/>
         </div>
         <WhySurakshak/>
         <Applications/>
+        <FAQ />
       </div>
     </Layout>
   );

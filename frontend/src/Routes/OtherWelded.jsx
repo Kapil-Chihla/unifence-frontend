@@ -15,30 +15,46 @@ import CoolLoader from '../CoolLoader';
 // Hero Section Component
 
 const Hero = () => (
-    <div className="relative h-[750px] w-full mt-10 md:mt-0">
+  <div className="relative h-[600px] md:h-[600px] lg:h-[750px] w-full mt-10 md:mt-0">
     <img
       src={other}
       alt="Contact us hero"
       className="w-full h-full object-cover brightness-50"
     />
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 className="text-5xl mb-4 font-extrabold">OTHER WELDEDMESH PRODUCTS</h1>
-      <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-      <p className="text-2xl font-extralight mt-4">
-          A strong welded mesh system having anti climb & anti cut features along with high visibility making it ideal for medium and high security.
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
+      OTHER WELDEDMESH PRODUCTS
+      </h1>
+      <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
+      Due to its rigidity, durability, and customization options, weldmesh has found widespread application beyond traditional fencing. Industries such as storage and architecture are increasingly adopting weldmesh as a cost-effective and sustainable alternative to conventional materials. Our weldmesh products, renowned for their quality and ease of use, offer a wide range of applications. From small-scale solutions like tree guards and window grills to large-scale infrastructure projects like mining mesh and cable trays, our products are designed to meet the highest industry standards and provide long-lasting performance.
       </p>
       <Link
         to="/contact"
-        className="relative mt-10 px-8 py-3 border-2 border-primary-turquoise text-primary-lightgreen font-bold text-lg rounded-2xl transition-colors duration-300 group overflow-visible inline-block"
+        className="relative inline-block mt-4 sm:mt-6 md:mt-8 lg:mt-10 
+                  px-4 sm:px-6 md:px-8 
+                  py-1.5 sm:py-2 md:py-3
+                  border border-primary-turquoise 
+                  text-primary-lightgreen 
+                  text-sm sm:text-base md:text-lg
+                  font-medium sm:font-bold 
+                  rounded-xl sm:rounded-2xl 
+                  transition-colors duration-300 
+                  group overflow-visible"
       >
         Enquire Now
-        <span className="absolute top-1/2 right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-20px]">
+        <span className="absolute top-1/2 right-[-8px] sm:right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-16px] sm:group-hover:right-[-20px]">
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
             data-icon="long-arrow-alt-right"
-            className="w-6 h-6 text-primary-turquoise group-hover:text-primary-turquoise"
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary-turquoise group-hover:text-primary-turquoise"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -54,54 +70,71 @@ const Hero = () => (
   </div>
 );
 const ProductGrid = ({ products }) => {
-    const [hoveredProduct, setHoveredProduct] = useState(null);
-  
-    return (
-      <div className="container mx-auto py-8">
-        {/* Product Grid */}
-        <div className={`flex justify-center gap-6 ${products.length === 2 ? 'justify-center' : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'}`}>
-          {products.map((product) => (
-            <div
-              key={product.id}
-              onMouseEnter={() => setHoveredProduct(product.id)}
-              onMouseLeave={() => setHoveredProduct(null)}
-              className="relative group cursor-pointer border overflow-hidden block"
-            >
-              {/* Product Image */}
+  const [hoveredProduct, setHoveredProduct] = useState(null);
+
+  return (
+    <div className="w-full px-4 sm:px-6 md:px-8">
+      <div
+        className={`
+          grid grid-cols-1 justify-items-center gap-4 sm:gap-6 md:gap-8
+          ${products.length === 2 
+            ? 'md:flex md:justify-center md:gap-6' 
+            : 'sm:grid-cols-2 lg:grid-cols-3'
+          }
+        `}
+      >
+        {products.map((product) => (
+          <Link
+            key={product.id}
+            to={product.link}
+            onMouseEnter={() => setHoveredProduct(product.id)}
+            onMouseLeave={() => setHoveredProduct(null)}
+            className="relative group cursor-pointer border overflow-hidden block w-full"
+            style={{ 
+              maxWidth: '500px',
+            }}
+          >
+            <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
               <img
                 src={product.image}
-                alt={product.name}
-                className="w-full h-72 object-cover brightness-75"
+                alt={product.title}
+                className="w-full h-full object-cover brightness-50"
               />
-  
-              {/* Title (Initially at the bottom of the image) */}
-              <div
-                className={`absolute inset-x-0 bottom-0 text-center text-white text-lg font-extrabold bg-transparent/90 bg-opacity-50 transition-all duration-500 transform ${
-                  hoveredProduct === product.id ? 'translate-y-[-80px]' : 'translate-y-0'
-                }`}
-                style={{
-                  width: '90%',
-                  left: '5%',  // This ensures the box is horizontally centered with 5% space on each side
-                  padding: '8px',  // Add some padding for better readability
-                }}
-              >
-                {product.title}
-              </div>
-  
-              {/* Description Box (Slides up from the bottom on hover) */}
-              <div
-                className={`absolute inset-x-0 font-extrabold bottom-0 p-4 text-white text-sm bg-opacity-50 transition-all duration-500 transform ${
-                  hoveredProduct === product.id ? 'translate-y-0' : 'translate-y-full'
-                }`}
-              >
-                <p>{product.description}</p>
-              </div>
             </div>
-          ))}
-        </div>
+
+            <div
+              className={`absolute inset-x-0 bottom-0 text-center text-white 
+                         text-sm sm:text-base md:text-lg font-bold sm:font-extrabold 
+                         bg-transparent/90 
+                         transition-all duration-500 transform
+                         ${hoveredProduct === product.id ? 'translate-y-[-70px] sm:translate-y-[-75px] md:translate-y-[-100px]' : 'translate-y-0'}`}
+              style={{
+                width: '90%',
+                left: '5%',
+                padding: '6px sm:padding-8px',
+                backdropFilter: 'blur(4px)',
+              }}
+            >
+              {product.title}
+            </div>
+
+            <div
+              className={`absolute inset-x-0 bottom-0 
+                         p-3 sm:p-4 
+                         text-white 
+                         text-xs sm:text-sm md:text-base 
+                         font-medium sm:font-bold md:font-extrabold 
+                         transition-all duration-500 transform
+                         ${hoveredProduct === product.id ? 'translate-y-0' : 'translate-y-full'}`}
+            >
+              <p>{product.description}</p>
+            </div>
+          </Link>
+        ))}
       </div>
-    );
-  };
+    </div>
+  );
+};
   
 
   const Products = () => {
@@ -110,57 +143,61 @@ const ProductGrid = ({ products }) => {
         id:1,
         image: window,
         title: 'WINDOW GRILL',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence offers a wide range of stylish and durable window grills to enhance home security and aesthetics.',
       },
       {
         id:2,
         image: cable,
         title: 'CABLE TRAY',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence provides reliable and efficient cable tray solutions for organized cable management in various industrial and commercial settings.',
       },
       {
         id:3,
         image: tree,
         title: 'TREE GUARD',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence offers durable and eco-friendly tree guards to protect young trees from damage and vandalism.',
       },
       {
         id:4,
         image: machine,
         title: 'MACHINE GUARD',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence provides sturdy and reliable machine guards to protect workers and equipment from accidents and injuries.',
       },
       {
         id:5,
         image: mining,
         title: 'MINING MESH',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence offers high-quality mining mesh solutions, designed to withstand harsh conditions and provide optimal protection for mining operations.',
       },
       {
         id:6,
         image: pixel,
         title: 'PIXEL FENCE',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence offers innovative pixel fence solutions, providing a modern and stylish way to secure properties while maintaining visibility.',
 
       },
       {
         id:7,
         image: trellis,
         title: 'TRELLIS WALL',
-        description: 'Galvanized wires with barbs at specified interval which makes for a great demarcation and security option',
+        description: 'Unifence offers versatile trellis wall solutions, perfect for creating beautiful and functional outdoor spaces.',
 
       },
     ];
   
     return (
-        <div className="container mx-auto py-8">
-      {/* Heading for Our Products */}
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-extrabold font-cap text-navy-900 mb-4">Our Products</h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
+      <div className="w-full py-8 sm:py-10 md:py-12">
+      <div className="text-center mb-6 sm:mb-8 md:mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-cap text-navy-900 mb-3 sm:mb-4">
+          Our Products
+        </h2>
+        <div className="w-20 sm:w-28 md:w-36 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+        </div>
       </div>
-
-      {/* Product Grid */}
       <ProductGrid products={products} />
     </div>
     );

@@ -21,129 +21,141 @@ const AboutUs = () => {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full min-h-screen flex flex-col">
       <StickyHeader />
       
       {/* Header with Background Image */}
-      <div className="relative h-[700px] w-full">
-        <img 
-          src={s1}
-          alt="Industrial machinery" 
-          className="w-full h-full object-cover brightness-50"
-        />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h1 className="text-5xl font-bold text-white">
+      <div className="relative w-full">
+        {/* Progressive height increase based on screen size */}
+        <div className="h-[300px] sm:h-[350px] md:h-[500px] lg:h-[700px] w-full">
+          <img 
+            src={s1}
+            alt="Industrial machinery" 
+            className="w-full h-full object-cover brightness-50"
+          />
+        </div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white">
             ABOUT US
           </h1>
-          <div className="h-1 w-32 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mt-4"></div>
+          <div className="h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mt-2 sm:mt-3 md:mt-4"></div>
         </div>
       </div>
 
       {/* First Text Section */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        <p className="text-navy-800 leading-relaxed">
-         Deepak Industries is an ISO 9001:2015 and ISO 45001:2008 certified
-         technology company founded in 2006. Led by visionary 
-         Director Mr. Deepak Goyal, the company offers a comprehensive 
-         range of products and services in Telecommunication, Solar Solutions, 
-         and Security & Surveillance.
-        </p>
+      <div className="w-full px-3 sm:px-4 md:px-6 py-6 sm:py-8 md:py-10 lg:py-12">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-navy-800 leading-relaxed">
+            Deepak Industries is an ISO 9001:2015 and ISO 45001:2008 certified
+            technology company founded in 2006. Led by visionary 
+            Director Mr. Deepak Goyal, the company offers a comprehensive 
+            range of products and services in Telecommunication, Solar Solutions, 
+            and Security & Surveillance.
+          </p>
+        </div>
       </div>
 
-      {/* Gradient Background Section with SVG Pattern */}
+      {/* Gradient Background Section */}
       <div className="relative">
-        {/* SVG Pattern Background */}
-        <div className="absolute w-full h-[calc(100%-200px)] bottom-0 bg-gradient-to-br from-green-600 via-cyan-500 to-green-500 overflow-hidden">
-          <svg 
-            className="absolute w-full h-full opacity-10" 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 100 100"
-          >
-            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-              <path 
-                d="M 10 0 L 0 0 0 10" 
-                fill="none" 
-                stroke="white" 
-                strokeWidth="0.5"
-              />
-            </pattern>
-            <rect width="100" height="100" fill="url(#grid)" />
-          </svg>
-          
-          {/* Additional decorative SVG elements */}
-          <svg 
-            className="absolute right-0 top-0 h-full opacity-20" 
-            viewBox="0 0 100 800" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path 
-              d="M0 0 Q 50 400 100 800" 
-              stroke="white" 
-              fill="none" 
-              strokeWidth="2"
-            />
-            <path 
-              d="M20 0 Q 70 400 120 800" 
-              stroke="white" 
-              fill="none" 
-              strokeWidth="1"
-            />
-          </svg>
-          
-          {/* Circuit-like pattern */}
-          <svg 
-            className="absolute left-0 bottom-0 w-full h-64 opacity-10" 
-            viewBox="0 0 200 100" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path 
-              d="M0 50 L 20 50 L 30 20 L 40 80 L 50 50 L 70 50" 
-              stroke="white" 
-              fill="none" 
-              strokeWidth="0.5"
-              strokeDasharray="2,2"
-            />
-            <path 
-              d="M80 50 L 100 50 L 110 20 L 120 80 L 130 50 L 150 50" 
-              stroke="white" 
-              fill="none" 
-              strokeWidth="0.5"
-              strokeDasharray="2,2"
-            />
-          </svg>
-        </div>
-        
-        <div className="relative max-w-5xl mx-auto px-6">
-          {/* Second Image */}
-          <div className="w-full h-[400px] shadow-xl">
-            <img 
-              src={s3} 
-              alt="Industrial worker" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+  {/* Gradient Background */}
+  {/* Adjusted height to be smaller on mobile screens */}
+  <div className="absolute w-full h-[calc(100%-100px)] sm:h-[calc(100%-150px)] md:h-[calc(100%-175px)] lg:h-[calc(100%-200px)] bottom-0 bg-gradient-to-br from-green-600 via-cyan-500 to-green-500 overflow-hidden">
+    {/* SVG Pattern Background - Adjusted scale for different screens */}
+    <svg 
+      className="absolute w-full h-full opacity-10 scale-50 sm:scale-75 md:scale-90 lg:scale-100" 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 100 100"
+    >
+      <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path 
+          d="M 10 0 L 0 0 0 10" 
+          fill="none" 
+          stroke="white" 
+          strokeWidth="0.5"
+        />
+      </pattern>
+      <rect width="100" height="100" fill="url(#grid)" />
+    </svg>
+    
+    {/* Decorative curve - Adjusted for responsiveness */}
+    <svg 
+      className="absolute right-0 top-0 h-full opacity-20 scale-75 sm:scale-90 lg:scale-100" 
+      viewBox="0 0 100 800" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path 
+        d="M0 0 Q 50 400 100 800" 
+        stroke="white" 
+        fill="none" 
+        strokeWidth="2"
+      />
+      <path 
+        d="M20 0 Q 70 400 120 800" 
+        stroke="white" 
+        fill="none" 
+        strokeWidth="1"
+      />
+    </svg>
+    
+    {/* Circuit pattern - Adjusted size and position */}
+    <svg 
+      className="absolute left-0 bottom-0 w-full h-32 sm:h-40 md:h-52 lg:h-64 opacity-10" 
+      viewBox="0 0 200 100" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path 
+        d="M0 50 L 20 50 L 30 20 L 40 80 L 50 50 L 70 50" 
+        stroke="white" 
+        fill="none" 
+        strokeWidth="0.5"
+        strokeDasharray="2,2"
+      />
+      <path 
+        d="M80 50 L 100 50 L 110 20 L 120 80 L 130 50 L 150 50" 
+        stroke="white" 
+        fill="none" 
+        strokeWidth="0.5"
+        strokeDasharray="2,2"
+      />
+    </svg>
+  </div>
+  
+  {/* Content Container - Adjusted padding for better spacing */}
+  <div className="relative w-full px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8 lg:py-12">
+    <div className="max-w-5xl mx-auto">
+      {/* Image - Adjusted height for better proportions on small screens */}
+      <div className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[75%] mx-auto">
+  <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] shadow-xl">
+    <img 
+      src={s3} 
+      alt="Industrial worker" 
+      className="w-full h-full object-cover rounded-sm"
+    />
+  </div>
+</div>
 
-          {/* Second Text Section */}
-          <div className="py-12 text-white relative z-10">
-            <p className="mb-6">
-            Headquartered in Delhi, Deepak Industries operates 
+      {/* Text Section - Adjusted padding and spacing */}
+      <div className="py-4 sm:py-6 md:py-8 lg:py-12 text-white">
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">
+        Headquartered in Delhi, Deepak Industries operates 
             nationwide through a robust network of offices and reliable partners. 
             The company's mission is to exceed customer expectations by delivering top-notch, 
             intelligent, and converged communication solutions tailored to individual client needs. 
             Deepak Industries is driven by a clear vision to be recognized as an industry leader, 
             admired for its unmatched support and reliability.
-            </p>
-            <p className="mb-6">
-            The company's motto, "No Compromise," underscores its unwavering commitment to 
+        </p>
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">
+        The company's motto, "No Compromise," underscores its unwavering commitment to 
             excellence and ethical standards. This guiding principle fuels Deepak's continuous 
             innovation and dedication to people development, resulting in superior products and services. 
             Deepak Industries' efficient customer service and pioneering approach have earned the trust 
             and confidence of its clients, 
             solidifying its position as a premier technology solutions provider in the market.
-            </p>
-          </div>
-        </div>
+        </p>
       </div>
+    </div>
+  </div>
+</div>
 
       <Footer />
     </div>

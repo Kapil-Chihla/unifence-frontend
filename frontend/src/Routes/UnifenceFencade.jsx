@@ -18,37 +18,51 @@ import s6 from '../Assets/Unifencade/s6.png'
 import s7 from '../Assets/Unifencade/s7.jpg'
 import s from '../Assets/s2.jpg'
 import FeatureCard from '../FeatureCard';
-import ApplicationsCard from '../ApplicationsCard';
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 import ApplicationsBlock from '../ApplicationsBlock';
 // Hero Section Component
-
 const Hero = () => (
-    <div className="relative h-[750px] w-full mt-10 md:mt-0">
+  <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[750px] w-full mt-10 md:mt-0">
     <img
-      src={s}
+      src={unicof}
       alt="Contact us hero"
       className="w-full h-full object-cover brightness-50"
     />
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 className="text-5xl mb-4 font-extrabold">Unifence Fencade</h1>
-      <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-      <p className="text-2xl font-extralight mt-4">
-          Unifence is a contemporary, aesthetically pleasing solution for all your demarcation requirements. It enhances the appearance of your property, providing a more refined look compared to traditional woven fencing options.
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
+      Unifence Fencade
+      </h1>
+      <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
+      Unifence is a contemporary, aesthetically pleasing solution for all your demarcation requirements. It enhances the appearance of your property, providing a more refined look compared to traditional woven fencing options.
       </p>
       <Link
         to="/contact"
-        className="relative mt-10 px-8 py-3 border-2 border-primary-turquoise text-primary-lightgreen font-bold text-lg rounded-2xl transition-colors duration-300 group overflow-visible inline-block"
+        className="relative inline-block mt-4 sm:mt-6 md:mt-8 lg:mt-10 
+                  px-4 sm:px-6 md:px-8 
+                  py-1.5 sm:py-2 md:py-3
+                  border border-primary-turquoise 
+                  text-primary-lightgreen 
+                  text-sm sm:text-base md:text-lg
+                  font-medium sm:font-bold 
+                  rounded-xl sm:rounded-2xl 
+                  transition-colors duration-300 
+                  group overflow-visible"
       >
         Enquire Now
-        <span className="absolute top-1/2 right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-20px]">
+        <span className="absolute top-1/2 right-[-8px] sm:right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-16px] sm:group-hover:right-[-20px]">
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
             data-icon="long-arrow-alt-right"
-            className="w-6 h-6 text-primary-turquoise group-hover:text-primary-turquoise"
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary-turquoise group-hover:text-primary-turquoise"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -65,38 +79,39 @@ const Hero = () => (
 );
 
 // Overview Section Component
-
 const Overview = () => (
-  <div className="py-16">
-    <div className="max-w-7xl mx-auto px-4 md:px-6">
-      <div className="flex flex-col md:flex-row items-center gap-12">
-        {/* Text Content */}
-        <div className="w-full md:w-1/2">
-          <div className="mb-8">
-            <h2 className="text-4xl font-bold text-navy-900">
-            Unifence offers innovative, aesthetically pleasing, modular, and sustainable solutions for perimeter demarcation.
-            </h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mt-4"></div>
+  <div className="py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
+          {/* Text Content */}
+          <div className="w-full md:w-1/2 mb-6 md:mb-0">
+            <div className="mb-4 sm:mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-navy-900 leading-tight">
+                Unifence offers innovative, aesthetically pleasing, modular, and sustainable solutions for perimeter demarcation.
+              </h2>
+              <div className="w-12 sm:w-14 md:w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mt-3 sm:mt-4"></div>
+            </div>
+            
+            <div className="space-y-3 sm:space-y-4">
+              <p className="text-base sm:text-lg md:text-lg lg:text-lg text-navy-800 leading-relaxed">
+                Unifence delivers intelligent demarcation solutions through uniquely designed fences that blend functionality and modularity with a visually appealing look. This results in a "Simple yet Elegant" approach to all your boundary needs. Every product in the Unifence range is built upon the core principles of AESTHETICS, FUNCTIONALITY, MODULARITY, and SUSTAINABILITY.
+              </p>
+            </div>
           </div>
           
-          <div className="space-y-4">
-            <p className="text-navy-800 text-lg leading-relaxed">
-            Unifence delivers intelligent demarcation solutions through uniquely designed fences that blend functionality and modularity with a visually appealing look. This results in a "Simple yet Elegant" approach to all your boundary needs. Every product in the Unifence range is built upon the core principles of AESTHETICS, FUNCTIONALITY, MODULARITY, and SUSTAINABILITY.
-            </p>
+          {/* Image */}
+          <div className="w-full md:w-1/2">
+            <div className="relative aspect-[4/3] w-full">
+              <img
+                src={unicof}
+                alt="UNICO security fence installation"
+                className="w-full h-full rounded-lg shadow-xl object-cover"
+              />
+            </div>
           </div>
-        </div>
-        
-        {/* Image */}
-        <div className="w-full md:w-1/2">
-          <img
-            src={unicof}
-            alt="UNICO security fence installation"
-            className="w-full h-auto rounded-lg shadow-xl object-cover"
-          />
         </div>
       </div>
     </div>
-  </div>
 );
 
 
@@ -137,17 +152,27 @@ const Features = () => {
   ];
 
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl mb-4 font-bold">Features</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
-          ))}
-        </div>
+    <div className="py-8 sm:py-12 md:py-16">
+      <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-xl sm:text-3xl md:text-4xl mb-2 mb:mb-4 font-bold tracking-wider">
+          FEATURES
+        </h2>
+        <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto px-4 sm:px-5 md:px-6">
+        {features.map((feature, index) => (
+          <FeatureCard
+            key={index}
+            title={feature.title}
+            image={feature.image}
+            description={feature.description}
+          />
+        ))}
       </div>
     </div>
   );
@@ -195,17 +220,27 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl mb-4 font-bold">Solutions We Offer</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {solutions.map((app, index) => (
-            <ApplicationsCard key={index} {...app} />
-          ))}
-        </div>
+    <div className="py-8 sm:py-12 md:py-16">
+      <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-xl sm:text-3xl md:text-4xl mb-2 mb:mb-4 font-bold tracking-wider">
+          SOLUTIONS WE OFFER
+        </h2>
+        <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto px-4 sm:px-5 md:px-6">
+        {solutions.map((feature, index) => (
+          <FeatureCard
+            key={index}
+            title={feature.title}
+            image={feature.image}
+            description={feature.description}
+          />
+        ))}
       </div>
     </div>
   );
@@ -213,103 +248,109 @@ const Solutions = () => {
 
 const SpecificationsTable = () => {
   return (
-    <div className="relative bg-black/30 w-full">
-       <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url(${s2})`,
-            backgroundAttachment: 'fixed',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.5)',
-            zIndex: -1
-          }}
-        />
+    <div className="relative bg-black/30 w-full py-8 sm:py-12 md:py-16">
+      <div 
+        className="absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: `url(${s})`,
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.5)',
+          zIndex: -1
+        }}
+      />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-12">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-3 sm:px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">
           SPECIFICATIONS
         </h2>
-        <div className="w-40 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-        <div className="w-full overflow-x-auto">
-          <table className="w-full border-collapse">
+        <div className="w-16 sm:w-28 md:w-32 
+                  h-0.5 sm:h-[3px] md:h-1 
+                  bg-gradient-to-r from-green-600 to-cyan-400 
+                  mx-auto 
+                  mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+        </div>
+        
+        <div className="w-full overflow-x-auto rounded-lg">
+          <table className="w-full border-collapse min-w-[800px]">
             <thead>
               <tr>
-                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-left">
+                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-left text-xs sm:text-sm md:text-base">
                   Post Type
                 </th>
-                <th colSpan="2" className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th colSpan="2" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Height (mm)
                 </th>
-                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Width (mm)
                 </th>
-                <th rowSpan="2" className="border border-white/ bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Mesh Size (mm)
                 </th>
-                <th colSpan="2" className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th colSpan="2" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Wire Diameter (mm)
                 </th>
-                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th rowSpan="2" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Coating
                 </th>
               </tr>
               <tr>
-                <th className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Baseplate
                 </th>
-                <th className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Grouted
                 </th>
-                <th className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Vertical
                 </th>
-                <th className="border border-white bg-zinc-800/50 text-white p-4 font-semibold text-center">
+                <th className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 font-semibold text-center text-xs sm:text-sm md:text-base">
                   Horizontal
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-white bg-zinc-800/50 text-white p-4">
+                <td className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-xs sm:text-sm md:text-base">
                   Bell Profile
                 </td>
-                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   700 - 2500
                 </td>
-                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   1000 - 3100
                 </td>
-                <td className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   2440
                 </td>
-                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   50 x 200
                 </td>
-                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   4.5
                 </td>
-                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   4.5
                 </td>
-                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td rowSpan="3" className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   Hot Dip Galvanized, TPC, PPC.
                 </td>
               </tr>
               <tr>
-                <td className="border border-white bg-zinc-800/50 text-white p-4">
+                <td className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-xs sm:text-sm md:text-base">
                   H-Profile
                 </td>
-                <td className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   2485
                 </td>
               </tr>
               <tr>
-                <td className="border border-white bg-zinc-800/50 text-white p-4">
+                <td className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-xs sm:text-sm md:text-base">
                   SHS/RHS
                 </td>
-                <td className="border border-white bg-zinc-800/50 text-white p-4 text-center">
+                <td className="border border-white bg-zinc-800/50 text-white p-2 sm:p-3 md:p-4 text-center text-xs sm:text-sm md:text-base">
                   2470
                 </td>
               </tr>
@@ -317,7 +358,7 @@ const SpecificationsTable = () => {
           </table>
         </div>
         
-        <p className="text-white/80 text-center mt-4">
+        <p className="text-white/80 text-center mt-4 text-xs sm:text-sm md:text-base">
           Multiple options available
         </p>
       </div>
@@ -327,7 +368,7 @@ const SpecificationsTable = () => {
 
 // FAQ Section Component
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState("What is the warranty of the product?");
+  const [openQuestion, setOpenQuestion] = useState("");
   
   const faqs = [
     {
@@ -353,31 +394,59 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="py-16 h-[70vh] md:h-[60vh]">
+    <div className="py-8 sm:py-12 md:py-16 my-6 sm:my-8 md:my-10 min-h-fit lg:h-[75vh]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-navy-900 mb-4">FAQ'S OF UNICO FENCE</h2>
-        <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
+        {/* Heading Section */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-navy-900 mb-3 sm:mb-4">
+          FAQ'S
+        </h2>
+        <div className="w-8 sm:w-9 md:w-10 
+                    h-0.5 sm:h-[3px] md:h-1 
+                    bg-gradient-to-r from-green-600 to-cyan-400 
+                    mx-auto 
+                    mb-6 sm:mb-7 md:mb-8">
+        </div>
+    
+        {/* FAQ Items Container */}
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq) => (
-            <div key={faq.question} className="mb-2">
+            <div key={faq.question} className="mb-2 sm:mb-3">
               <button
-                className={`w-full px-6 py-4 text-left flex items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-200 ${
-                  openQuestion === faq.question ? 'rounded-t-lg' : 'rounded-lg'
-                }`}
+                className={`w-full px-4 sm:px-5 md:px-6 
+                          py-3 sm:py-3.5 md:py-4 
+                          text-left flex items-center 
+                          bg-gray-800 hover:bg-gray-700 
+                          transition-colors duration-200 
+                          ${openQuestion === faq.question ? 'rounded-t-lg' : 'rounded-lg'}`}
                 onClick={() => setOpenQuestion(openQuestion === faq.question ? null : faq.question)}
               >
-                <div className="w-8 h-8 flex items-center justify-center bg-gradient-to-r from-green-600 to-cyan-400 rounded mr-4">
+                {/* Icon Container */}
+                <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 
+                            flex items-center justify-center 
+                            bg-gradient-to-r from-green-600 to-cyan-400 
+                            rounded 
+                            mr-3 sm:mr-3.5 md:mr-4">
                   <ChevronDown
-                    className={`w-6 h-6 text-white transform transition-transform duration-200 ${
-                      openQuestion === faq.question ? 'rotate-180' : ''
-                    }`}
+                    className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 
+                              text-white transform transition-transform duration-200 
+                              ${openQuestion === faq.question ? 'rotate-180' : ''}`}
                   />
                 </div>
-                <span className="text-white font-medium">{faq.question}</span>
+                {/* Question Text */}
+                <span className="text-white font-medium text-sm sm:text-base md:text-lg">
+                  {faq.question}
+                </span>
               </button>
+              
+              {/* Answer Panel */}
               {openQuestion === faq.question && (
-                <div className="bg-gray-800 px-6 py-4 rounded-b-lg">
-                  <p className="text-white pl-12">{faq.answer}</p>
+                <div className="bg-gray-800 
+                              px-4 sm:px-5 md:px-6 
+                              py-3 sm:py-3.5 md:py-4 
+                              rounded-b-lg">
+                  <p className="text-white pl-9 sm:pl-10 md:pl-12 text-sm sm:text-base">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
             </div>
@@ -401,53 +470,78 @@ const Layout = ({ children }) => (
 
 
 const Applications = () => {
-  const features = [
+  const applications = [
     {
-      title: "DEMARCATION",
-      description: "Whether you own a commercial property or are simply willing to demarcate your residential property, one of the most promising ways to do so is to deploy a chain link fence, which will not only help enclose the area but will also ensure that you enjoy an unobstructed view of the surrounding areas."
+      title: "Sporting Fences",
+      description: "Over the past two decades, India has witnessed remarkable growth in the enthusiasm and support for various professional sports. This surge in interest has inspired an increasing number of people to dedicate their time and resources to creating well-equipped, thoughtfully designed sports facilities. These facilities have become integral to modern urban developments, including mixed-use residential projects and Special Economic Zones (SEZs)."
     },
     {
-      title: "SECURITY",
-      description: "Looking forward to keeping your commercial or industrial premises safe from wandering strays or intruders? Then, consider deploying a Chain Link Fence, which offers the best of both worlds – Security and Transparency! Add to it a barbed wire or concertina on top, and double up on the safety prospect."
+      title: "Gardens & parks",
+      description: "Do you enjoy gardens or have one at home? If so, you're likely familiar with the challenges of maintaining it. With all the time and effort you invest, it’s only natural to seek the best security solution to protect your cherished garden from any harm. On top of that, a clean, visually appealing fence can significantly enhance the beauty and value of your garden."
     },
     {
-      title: "PRIVACY",
-      description: "While transparency is one of the most well-known aspects of Chain Link Fence, simply adding Aluminum slats to the installation can assure not just safety but also complete privacy, which can prove to be a boon for many!"
+      title: "Biodiversity",
+      description: "A fencing environment around an area of dense biodiversity is an important step to maintain & protect it. They may act as a tool for biodiversity conservation, especially the endangered ones, by providing a natural habitat for its native species. The fencing solution should also complement the natural environment and add to its beauty instead of making it look like a heavily guarded space."
     },
     {
-      title: "FARMS/ANIMAL ENCLOSURES",
-      description: "If you own a field, poultry farm, or rear cattle or pets then a chain link fence might prove to be the perfect solution for you. The fence will ensure the perfect level of safety for your beloved animals while giving them the much-needed opportunity to roam around freely."
+      title: "Residential complex & bungalows",
+      description: "Installing a fencing solution for a residential or apartment complex is crucial, not just for safeguarding the privacy and security of its residents, but also for elevating the visual charm of the property. Unfortunately, the aesthetic appeal is often neglected as security features tend to take center stage in such projects."
     },
     {
-      title: "PERIPHERY",
-      description: "Schools, whether they are for toddlers or young children, can easily rely on Chain Link Fence to offer a clearly defined space for play and other outdoor activities! This ensures that both the school administration as well as the parents can enjoy some peace of mind while the children rejoice!"
+      title: "Religious Places",
+      description: "Quality fencing solutions play a vital role in preserving the charm of heritage sites, seamlessly complementing the era, architectural style, and materials of the structures. Thoughtful demarcation can significantly enhance the historic character and cultural value of these treasured locations."
+    },
+    {
+      title: "Industrial Areas",
+      description: "Fencing solutions are essential in heavily crowded areas like markets, construction sites, or public spaces, serving to manage access while ensuring unrestricted movement within designated zones. Well-designed fencing not only improves crowd control and safety but also enhances the area's appeal. By incorporating visually striking designs and vibrant colors, these solutions can demarcate spaces effectively, creating a safer, more organized, and inviting environment with improved illumination."
+    },
+    {
+      title: "Commercial Areas",
+      description: "Crowded areas such as markets, construction sites, and other public spaces require effective fencing solutions to manage access within defined boundaries while ensuring smooth movement. Thoughtfully designed fencing can improve crowd control, enhance safety, and clearly delineate zones. Additionally, with a wide range of attractive designs and vibrant colors, these fences can elevate the aesthetics of the area, creating a more organized, secure, and visually appealing environment, complemented by improved lighting."
+    },
+    {
+      title: "River Front",
+      description: "Seeking modern demarcation solutions that combine flexibility, permeability, sustainability, and aesthetic appeal? Gabions are the perfect answer to meet these diverse needs. Whether it's engineering applications, architectural trends, or sustainable solutions, Gabions offer numerous advantages. Beyond their visual appeal, they are highly effective in preventing soil erosion, making them a practical and environmentally friendly choice for a variety of settings."
     }
   ];
 
+  const getGridClasses = () => {
+    if (applications.length <= 2) {
+      return `
+        grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8
+        ${applications.length === 1 ? 'max-w-md' : 'max-w-2xl'}
+        mx-auto
+      `;
+    }
+    return "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8";
+  };
+
   return (
-    <div className="py-16">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-navy-900 mb-4">Applications</h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-        <p className="text-xl text-navy-800 mx-auto">
-          Chain Link Fences offer versatile solutions for various needs, from securing commercial properties to creating safe spaces for schools and farms. Explore our range of applications below.
-        </p>
+    <div className="py-8 md:py-12 lg:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 font-bold text-navy-900">
+            APPLICATIONS
+          </h2>
+          <div className="w-20 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
       </div>
-      
-      {/* Feature Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, index) => (
-          <ApplicationsBlock
-            key={index}
-            title={feature.title}
-            description={feature.description}
-          />
-        ))}
+        </div>
+        
+        <div className={getGridClasses()}>
+          {applications.map((application, index) => (
+            <ApplicationsBlock
+              key={index}
+              title={application.title}
+              description={application.description}
+            />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
@@ -474,8 +568,8 @@ const UnifenceFencade = () => {
       <Features />
       <Solutions />
       <SpecificationsTable />
-      <FAQ />
       <Applications/>
+      <FAQ />
     </Layout>
   );
 };

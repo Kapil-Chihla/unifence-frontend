@@ -2,32 +2,33 @@ import React, { useState, useEffect } from "react";
 import s1 from './Assets/s1.jpg'
 import s2 from './Assets/s2.jpg'
 import s3 from './Assets/s3.jpg'
+
 const slides = [
   {
-    image: s2, // Replace with your actual image path: s1
+    image: s2,
     heading1: "Secure Every Perimeter, Every Time",
     heading2: "Top-Quality Fencing Solutions"
   },
   {
-    image: s1, // Replace with your actual image path: s2
+    image: s1,
     heading1: "Trusted Infrastructure Experts",
     heading2: "Smart, Safe & Reliable"
   },
   {
-    image: s3, // Replace with your actual image path: s3
+    image: s3,
     heading1: "Innovation in Every Solution",
     heading2: "No Compromise in Quality"
   }
 ];
 
 const ScrollIndicator = () => (
-  <div className="absolute left-8 bottom-12 flex items-center gap-4">
-    <div className="text-white text-sm tracking-widest" style={{ writingMode: 'vertical-lr' }}>
+  <div className="absolute left-4 md:left-8 bottom-8 md:bottom-12 flex items-center gap-2 md:gap-4">
+    <div className="text-white text-xs md:text-sm tracking-widest" style={{ writingMode: 'vertical-lr' }}>
       SCROLL
     </div>
-    <div className="relative h-24 flex items-center">
+    <div className="relative h-16 md:h-24 flex items-center">
       <div className="w-px h-full bg-white/30"></div>
-      <div className="absolute top-0 w-px h-12 bg-white animate-line-scroll"></div>
+      <div className="absolute top-0 w-px h-8 md:h-12 bg-white animate-line-scroll"></div>
     </div>
   </div>
 );
@@ -37,23 +38,17 @@ const Slide = ({ image, heading1, heading2 }) => (
     className="relative w-full h-full bg-cover bg-center"
     style={{ backgroundImage: `url(${image})` }}
   >
-    {/* Dark overlay for better text readability */}
     <div className="absolute inset-0 bg-black/40">
-      {/* Content container with left alignment */}
-      <div className="relative h-full flex flex-col justify-center px-16 md:px-24 lg:px-32">
-        {/* Headings container */}
-        <div className="max-w-2xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white animate-slide-in">
+      <div className="relative h-full flex flex-col justify-center px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32">
+        <div className="max-w-xs sm:max-w-lg md:max-w-xl lg:max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 md:mb-4 lg:mb-6 text-white animate-slide-in">
             {heading1}
           </h1>
-          <h2 className="text-2xl md:text-3xl font-light text-white/90 animate-slide-in-delay">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-white/90 animate-slide-in-delay">
             {heading2}
           </h2>
         </div>
       </div>
-      
-      {/* Show scroll indicator only on first slide */}
- 
     </div>
   </div>
 );
@@ -76,8 +71,7 @@ export default function HomepageSlider() {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Add these keyframes styles to your global CSS or style tag */}
+    <div className="relative w-full h-[calc(100vh)] overflow-hidden"> {/* Adjusted height to account for potential header */}
       <style>
         {`
           @keyframes lineScroll {
@@ -136,13 +130,12 @@ export default function HomepageSlider() {
 
       {<ScrollIndicator />}
 
-      {/* Navigation dots */}
-      <div className="absolute bottom-1/2 right-1 mr-8 transform -translate-x-1/2 flex flex-col space-y-2">
+      <div className="absolute bottom-1/2 right-0 md:right-1 mr-4 md:mr-8 transform -translate-x-1/2 flex flex-col space-y-1.5 md:space-y-2">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
               currentIndex === index ? "bg-white" : "bg-gray-500"
             }`}
           ></button>

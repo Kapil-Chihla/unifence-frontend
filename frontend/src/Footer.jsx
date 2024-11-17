@@ -1,16 +1,22 @@
 import React from 'react';
-import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const whoWeAreItems = ['About Us', 'Our Approvals And Clientele'];
+  const whoWeAreItems = [
+    { name: 'About Us', route: '/about' },
+    { name: 'Our Approvals And Clientele', route: '/our-approvals' },
+  ];
+  
   const productCategories = [
-    'Power Transmission Systems',
-    'Infrastructure Solutions',
-    'Electrical Distribution',
-    'Industrial Equipment',
-    'Railway Track Components',
-    'Steel Manufacturing',
-    'Transportation Systems'
+    { name: 'Power Transmission and Distribution', route: '/power-transmission-and-distribution' },
+    { name: 'Woven Mesh', route: '/woven-mesh' },
+    { name: 'Weld Mesh Fence', route: '/weld-mesh-fence' },
+    { name: 'Gabions', route: '/gabions' },
+    { name: 'Other Welded Mesh', route: '/other-welded-mesh-products' },
+    { name: 'Fence Add Ons', route: '/fence-add-ons' },
+    { name: 'Wires', route: '/wires' },
+    { name: 'Railway Electrification Structures', route: '/railway-electrification-structures' },
   ];
 
   return (
@@ -24,10 +30,10 @@ const Footer = () => {
               <h2 className="text-white text-base font-medium mb-4">Who we Are</h2>
               <ul className="space-y-2 text-sm">
                 {whoWeAreItems.map((item) => (
-                  <li key={item}>
-                    <a href="#" className="hover:text-white transition-colors">
-                      {item}
-                    </a>
+                  <li key={item.name}>
+                    <Link to={item.route} className="hover:text-white transition-colors">
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -38,18 +44,25 @@ const Footer = () => {
               <h2 className="text-white text-base font-medium mb-4">Our Products</h2>
               <div className="grid grid-cols-3 gap-x-4 gap-y-2 text-sm">
                 {productCategories.map((category) => (
-                  <a key={category} href="#" className="hover:text-white transition-colors">
-                    {category}
-                  </a>
+                  <Link
+                    key={category.name}
+                    to={category.route}
+                    className="hover:text-white transition-colors"
+                  >
+                    {category.name}
+                  </Link>
                 ))}
               </div>
             </div>
 
             {/* Contact Us */}
             <div>
-              <a href="#contact" className="text-white text-base font-medium hover:text-gray-200 transition-colors">
+              <Link
+                to="/contact"
+                className="text-white text-base font-medium hover:text-gray-200 transition-colors"
+              >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -62,10 +75,10 @@ const Footer = () => {
               <h2 className="text-white text-base font-medium mb-4">Who we Are</h2>
               <ul className="space-y-2 text-sm">
                 {whoWeAreItems.map((item) => (
-                  <li key={item}>
-                    <a href="#" className="hover:text-white transition-colors">
-                      {item}
-                    </a>
+                  <li key={item.name}>
+                    <Link to={item.route} className="hover:text-white transition-colors">
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -76,18 +89,25 @@ const Footer = () => {
               <h2 className="text-white text-base font-medium mb-4">Our Products</h2>
               <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
                 {productCategories.map((category) => (
-                  <a key={category} href="#" className="hover:text-white transition-colors">
-                    {category}
-                  </a>
+                  <Link
+                    key={category.name}
+                    to={category.route}
+                    className="hover:text-white transition-colors"
+                  >
+                    {category.name}
+                  </Link>
                 ))}
               </div>
             </div>
 
             {/* Contact Us */}
             <div className="mt-8">
-              <a href="#contact" className="text-white text-base font-medium hover:text-gray-200 transition-colors">
+              <Link
+                to="/contact"
+                className="text-white text-base font-medium hover:text-gray-200 transition-colors"
+              >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -95,24 +115,19 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-xs">
-            Copyright © 2024 SAEI. All rights reserved.
+            Copyright © 2024 UNIFENCE. All rights reserved.
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-xs">Follow us on</span>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-white">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
-                  <Facebook size={14} />
-                </div>
-              </a>
-              <a href="#" className="hover:text-white">
+              <a
+                href=" https://www.linkedin.com/company/deepak-industries"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
                 <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
                   <Linkedin size={14} />
-                </div>
-              </a>
-              <a href="#" className="hover:text-white">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
-                  <Instagram size={14} />
                 </div>
               </a>
             </div>

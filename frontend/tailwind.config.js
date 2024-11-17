@@ -18,11 +18,17 @@ module.exports = {
       },
       animation: {
         fadeIn: 'fadeIn 1.5s ease-in-out',
+        fadeInOut: 'fadeInOut 3s ease-in-out forwards',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        fadeInOut: {
+          '0%': { opacity: 0, transform: 'translateX(-50%)' },
+          '50%': { opacity: 1, transform: 'translateX(0)' },
+          '100%': { opacity: 0, transform: 'translateX(50%)' },
         },
       },
     },

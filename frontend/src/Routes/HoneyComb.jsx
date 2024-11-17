@@ -7,37 +7,51 @@ import f1 from '../Assets/honeycomb/f1.webp';
 import f2 from '../Assets/honeycomb/f2.webp';
 import f3 from '../Assets/honeycomb/f3.webp';
 import FeatureCard from '../FeatureCard';
-
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 
 // Hero Section Component
-
 const Hero = () => (
-    <div className="relative h-[750px] w-full mt-10 md:mt-0">
+  <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[750px] w-full mt-10 md:mt-0">
     <img
       src={main}
       alt="Contact us hero"
-      className="w-full h-full object-cover brightness-50 opacity-100"
+      className="w-full h-full object-cover brightness-50"
     />
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 className="text-5xl mb-4 font-extrabold">Henoycomb Fence</h1>
-      <div className="w-32 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-      <p className="text-2xl font-extralight mt-4">
-          A strong welded mesh system having anti climb & anti cut features along with high visibility making it ideal for medium and high security.
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
+      <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
+      Henoycomb Fence
+      </h1>
+      <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
+      A hexagonal-shaped demarcation fence featuring triple-twist mesh offers superior strength compared to traditional woven fences. It is easy to install, highly durable, and built to last, making it an excellent choice for secure and long-lasting boundary solutions.
       </p>
       <Link
         to="/contact"
-        className="relative mt-10 px-8 py-3 border-2 border-primary-turquoise text-primary-lightgreen font-bold text-lg rounded-2xl transition-colors duration-300 group overflow-visible inline-block"
+        className="relative inline-block mt-4 sm:mt-6 md:mt-8 lg:mt-10 
+                  px-4 sm:px-6 md:px-8 
+                  py-1.5 sm:py-2 md:py-3
+                  border border-primary-turquoise 
+                  text-primary-lightgreen 
+                  text-sm sm:text-base md:text-lg
+                  font-medium sm:font-bold 
+                  rounded-xl sm:rounded-2xl 
+                  transition-colors duration-300 
+                  group overflow-visible"
       >
         Enquire Now
-        <span className="absolute top-1/2 right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-20px]">
+        <span className="absolute top-1/2 right-[-8px] sm:right-[-12px] transform opacity-0 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-16px] sm:group-hover:right-[-20px]">
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
             data-icon="long-arrow-alt-right"
-            className="w-6 h-6 text-primary-turquoise group-hover:text-primary-turquoise"
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary-turquoise group-hover:text-primary-turquoise"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -60,116 +74,139 @@ const Features = () => {
     {
       title: 'Secure',
       image:f1,
-      description: 'The Mesh size of 76.2 X 12.7 mm makes it difficult to grip thus prohibiting any chances of climbing the fence.'
+      description: 'The triple-twist construction and unique Honeycomb Fence® design ensure that the structural integrity of the mesh remains intact, even if a single wire is intentionally cut or accidentally broken.'
     },
     {
       title: 'Strong',
       image:f2,
-      description: 'The dense mesh inhibits ingress of commonly available cutting tools like pliers which makes the fence difficult to cut'
+      description: 'The Honeycomb Fence® structure evenly distributes any impact across the entire mesh, while its flexible fabric absorbs the force, making it an ideal choice for fencing football fields and other sports arenas.'
     },
     {
       title: 'Long Life',
       image:f3,
-      description: 'The fence although being so dense gives clear visibility so that it is CCTV friendly exposing the intruders'
+      description: 'Offered in various coating options to suit different environmental and site conditions, these coatings help prevent corrosion and extend the product lifespan. Available Coatings: Zinc EcoZal (90% Zn + 10% Al), PVC Glued, PVC Fusion Bonded, and PA6.'
     }
   ];
 
   return (
-    <div className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl mb-4 font-bold">Features</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
-          ))}
-        </div>
+    <div className="py-8 sm:py-12 md:py-16">
+      <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-xl sm:text-3xl md:text-4xl mb-2 mb:mb-4 font-bold tracking-wider">
+          FEATURES
+        </h2>
+        <div className="w-16 sm:w-28 md:w-32 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto px-4 sm:px-5 md:px-6">
+        {features.map((feature, index) => (
+          <FeatureCard
+            key={index}
+            title={feature.title}
+            image={feature.image}
+            description={feature.description}
+          />
+        ))}
       </div>
     </div>
   );
 };
 const HoneycombSpecs = () => {
-    const specifications = [
-      {
-        name: "Wire",
-        parameter: "Diameter",
-        specification: "2.7 mm"
-      },
-      {
-        name: "Honeycomb Fabric",
-        parameter: "Mesh Size",
-        specification: "80 X 100 mm,\n100X120 mm"
-      },
-      {
-        name: "Circular Hollow Section Post",
-        parameter: "Dimensions",
-        specification: "Straining Post - 76 x 3 mm\nIntermediate Post - 60 x 3mm"
-      },
-      {
-        name: "Diagonal Support",
-        parameter: "Dimension",
-        specification: "48 x 2mm"
-      },
-      {
-        name: "Coating",
-        parameter: "Finish",
-        specification: "Fabric - PVC\nPost - PPC"
-      }
-    ];
-  
-    return (
-      <div className="relative bg-black/30 h-[75vh] py-10">
-         <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url(${s2})`,
-            backgroundAttachment: 'fixed',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.5)',
-            zIndex: -1
-          }}
-        />
-        
-        <div className="relative z-10 p-8">
-          <div className="max-w-6xl mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-6 text-white">
-              STANDARD SPECIFICATIONS OF HONEYCOMB FENCE
-            </h1>
-            <div className="w-40 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-            <div className="w-full max-w-4xl mx-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr>
-                    <th className="border border-white/30 font-extrabold bg-black/30 text-white p-4 text-left">Name</th>
-                    <th className="border border-white/30 font-extrabold bg-black/30 text-white p-4 text-left">Parameter</th>
-                    <th className="border border-white/30 font-extrabold bg-black/30 text-white p-4 text-left">Specification</th>
+  const specifications = [
+    {
+      name: "Wire",
+      parameter: "Diameter",
+      specification: "2.7 mm"
+    },
+    {
+      name: "Honeycomb Fabric",
+      parameter: "Mesh Size",
+      specification: "80 X 100 mm,\n100X120 mm"
+    },
+    {
+      name: "Circular Hollow Section Post",
+      parameter: "Dimensions",
+      specification: "Straining Post - 76 x 3 mm\nIntermediate Post - 60 x 3mm"
+    },
+    {
+      name: "Diagonal Support",
+      parameter: "Dimension",
+      specification: "48 x 2mm"
+    },
+    {
+      name: "Coating",
+      parameter: "Finish",
+      specification: "Fabric - PVC\nPost - PPC"
+    }
+  ];
+
+  return (
+    <div className="relative bg-black/30 min-h-[450px] sm:min-h-[650px] py-6 sm:py-8 md:py-10 mb-8">
+      <div 
+        className="absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: `url(${s2})`,
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.5)',
+          zIndex: -1
+        }}
+      />
+      
+      <div className="relative z-10 px-3 sm:px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 md:mb-6 text-white">
+            STANDARD SPECIFICATIONS OF HONEYCOMB FENCE
+          </h1>
+          <div className="w-20 sm:w-36 md:w-48 
+                h-0.5 sm:h-[3px] md:h-1 
+                bg-gradient-to-r from-green-600 to-cyan-400 
+                mx-auto 
+                mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+      </div>
+          
+          {/* Table Container with horizontal scroll */}
+          <div className="w-full max-w-4xl mx-auto overflow-x-auto pb-4">
+            <table className="w-full border-collapse min-w-[600px]">
+              <thead>
+                <tr>
+                  <th className="border border-white/30 font-extrabold bg-black/30 text-white p-2 sm:p-3 md:p-4 text-left text-xs sm:text-sm md:text-base">
+                    Name
+                  </th>
+                  <th className="border border-white/30 font-extrabold bg-black/30 text-white p-2 sm:p-3 md:p-4 text-left text-xs sm:text-sm md:text-base">
+                    Parameter
+                  </th>
+                  <th className="border border-white/30 font-extrabold bg-black/30 text-white p-2 sm:p-3 md:p-4 text-left text-xs sm:text-sm md:text-base">
+                    Specification
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {specifications.map((spec, index) => (
+                  <tr key={index}>
+                    <td className="border border-white/30 bg-black/20 text-white p-2 sm:p-3 md:p-4 text-xs sm:text-sm md:text-base">
+                      {spec.name}
+                    </td>
+                    <td className="border border-white/30 bg-black/20 text-white p-2 sm:p-3 md:p-4 text-xs sm:text-sm md:text-base">
+                      {spec.parameter}
+                    </td>
+                    <td className="border border-white/30 bg-black/20 text-white p-2 sm:p-3 md:p-4 whitespace-pre-line text-xs sm:text-sm md:text-base">
+                      {spec.specification}
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {specifications.map((spec, index) => (
-                    <tr key={index}>
-                      <td className="border border-white/30 bg-black/20 text-white p-4">
-                        {spec.name}
-                      </td>
-                      <td className="border border-white/30 bg-black/20 text-white p-4">
-                        {spec.parameter}
-                      </td>
-                      <td className="border border-white/30 bg-black/20 text-white p-4 whitespace-pre-line">
-                        {spec.specification}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 // Layout Component
 const Layout = ({ children }) => (
   <div className="min-h-screen flex flex-col">
@@ -180,70 +217,55 @@ const Layout = ({ children }) => (
     <Footer />
   </div>
 );
-const ApplicationIcon = () => (
-    <svg 
-      className="w-24 h-24 mx-auto mb-4" 
-      viewBox="0 0 64 64" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2"
-    >
-      <path 
-        d="M16 16 L48 16 L48 48 L16 48 L16 16" 
-        strokeDasharray="4 4" 
-        className="text-gray-800"
-      />
-      <path 
-        d="M16 32 L48 32" 
-        strokeDasharray="4 4" 
-        className="text-gray-800"
-      />
-      <path 
-        d="M32 16 L32 48" 
-        strokeDasharray="4 4" 
-        className="text-gray-800"
-      />
-    </svg>
-  );
-  
-  const ApplicationBlock = ({ icon, title }) => (
-    <div className="text-center">
-      {icon}
-      <h3 className="text-gray-800 text-xl font-bold">{title}</h3>
-    </div>
-  );
-  
-  const Applications = () => {
+const ApplicationsBlock = ({ title, description }) => (
+  <div className="bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8 md:p-10 
+                  max-w-xl mx-auto w-full
+                  transition-transform hover:scale-105">
+    <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold text-white mb-3 sm:mb-4 text-center">
+      {title}
+    </h3>
+    <p className="text-sm sm:text-base md:text-lg text-white text-center">
+      {description}
+    </p>
+  </div>
+);
+const Applications = () => {
     const applications = [
       {
-        icon: <ApplicationIcon />,
-        title: "Demarcation"
-      }
-      // Add more applications as needed
+        title: 'Demarcation',
+        description: 'Honeycomb fencing, with its distinctive hexagonal mesh design, provides a strong, durable, and visually appealing solution for various demarcation applications. It can be used to define property boundaries, secure perimeters, separate roadways, and create designated zones within parks and recreational areas. This versatile fencing option offers a balance of strength, aesthetics, and functionality, making it an ideal choice for diverse projects.'
+      },
     ];
   
     return (
-      <div className="relative">
-        <div className="max-w-6xl mx-auto px-4 py-16">
-          <h1 className="text-4xl font-bold text-center text-navy-900 mb-8">
-            APPLICATIONS OF HONEYCOMB FENCE
-          </h1>
-          
-          <div className="w-40 h-1 bg-gradient-to-r from-green-600 to-cyan-400 mx-auto mb-8"></div>
-          {/* Applications grid */}
-          <div className="flex justify-center">
-            {applications.map((app, index) => (
-              <ApplicationBlock 
-                key={index}
-                icon={app.icon}
-                title={app.title}
-              />
-            ))}
-          </div>
+      <div className="py-6 sm:py-8 md:py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+      <div className="text-center mb-6 sm:mb-8 md:mb-12">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 md:mb-4 font-bold text-navy-900">
+          APPLICATIONS OF HONEYCOMB FENCE
+        </h2>
+        <div className="w-20 sm:w-28 md:w-32 
+                      h-0.5 sm:h-[3px] md:h-1 
+                      bg-gradient-to-r from-green-600 to-cyan-400 
+                      mx-auto 
+                      mb-6 sm:mb-8 md:mb-10">
         </div>
       </div>
+      
+      {/* Centered container for single application */}
+      <div className="flex justify-center items-center px-4 sm:px-6 md:px-8">
+        {applications.map((application, index) => (
+          <ApplicationsBlock
+            key={index}
+            title={application.title}
+            description={application.description}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
     );
-  };
+};
 
 // Main Component
 const HoneyComb = () => {

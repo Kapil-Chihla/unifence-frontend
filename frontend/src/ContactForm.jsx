@@ -22,7 +22,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
-  const [snackbarSeverity, setSnackbarSeverity] = useState('success'); // 'success' or 'error'
+  const [snackbarSeverity, setSnackbarSeverity] = useState('success');
 
   const validateRequired = (value, fieldName) => {
     if (!value.trim()) {
@@ -141,7 +141,7 @@ const ContactForm = () => {
     `${inputStyle} ${errors[fieldName] ? 'border-red-500' : ''}`;
 
   return (
-    <div className="w-full mt-32 relative overflow-hidden py-8 md:py-16 flex items-center justify-center">
+    <div className="w-full relative overflow-hidden py-4 md:py-16 flex items-center justify-center">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-600 via-cyan-500 to-green-500">
         {/* Grid Pattern */}
@@ -204,13 +204,13 @@ const ContactForm = () => {
         </svg>
       </div>
 
-      <div className="w-full max-w-[1000px] mx-4 md:mx-auto bg-white rounded-2xl p-6 md:p-12 relative z-10">
-        <h2 className="text-2xl md:text-[32px] font-bold text-center text-slate-800 mb-8 md:mb-12">
+      <div className="w-full max-w-[1000px] mx-4 md:mx-auto bg-white rounded-2xl p-4 md:p-12 relative z-10">
+        <h2 className="text-2xl md:text-[32px] font-bold text-center text-slate-800 mb-4 md:mb-12">
           GET IN TOUCH
         </h2>
         
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:gap-6">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-8">
             <div className="flex-1">
               <div className="flex items-center gap-1">
                 <input
@@ -254,7 +254,7 @@ const ContactForm = () => {
             />
           </div>
           
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-8">
             <div className="flex-1">
               <div className="flex items-center gap-1">
                 <input
@@ -294,7 +294,7 @@ const ContactForm = () => {
               value={formData.message}
               onChange={handleChange}
               className={getInputClassName('message')}
-              rows={5}
+              rows={4}
               required
             />
             {errors.message && <p className={errorStyle}>{errors.message}</p>}
@@ -303,14 +303,13 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full md:w-auto px-8 py-3 mt-4 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full md:w-auto px-8 py-2 md:py-3 mt-2 md:mt-4 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
         </form>
       </div>
 
-      {/* Snackbar for success/error messages */}
       <Snackbar
         open={snackbarOpen}
         autoHideDuration={6000}

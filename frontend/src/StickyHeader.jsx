@@ -211,18 +211,18 @@ useEffect(() => {
                 </div>
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Woven Mesh">
-                <div onClick={() => handleLinkClick('#')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                <div onClick={() => handleLinkClick('/woven-mesh')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Chain Link Fence
                 </div>
-                <div onClick={() => handleLinkClick('#')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                <div onClick={() => handleLinkClick('/honeycomb-fence')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Honeycomb Fence
                 </div>
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Fence Add-Ons">
-                <div onClick={() => handleLinkClick('#')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                <div onClick={() => handleLinkClick('/fence-add-ons')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Unifence Kisen Shanti
                 </div>
-                <div onClick={() => handleLinkClick('#')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                <div onClick={() => handleLinkClick('/unifence-concertina-coil')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Unifence Concertina Coil
                 </div>
               </MobileNestedDropdownMenu>
@@ -237,6 +237,14 @@ useEffect(() => {
             <div onClick={() => handleLinkClick('/contact')} className="w-full py-4 px-6 text-white font-semibold text-lg cursor-pointer">
               Contact Us
             </div>
+            <a
+                  href=" https://www.linkedin.com/company/deepak-industries/" // Replace with your LinkedIn URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center mt-4 text-white hover:opacity-80 transition-opacity"
+                >
+                  <Linkedin size={20} />
+                </a>
           </div>
         </div>
       )}
@@ -291,13 +299,7 @@ useEffect(() => {
           </nav>
 
           <div className="flex space-x-4 text-primary-navy">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
-              <Instagram size={20} />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
-              <Facebook size={20} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
+            <a href=" https://www.linkedin.com/company/deepak-industries/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
               <Linkedin size={20} />
             </a>
           </div>

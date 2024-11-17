@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 
 const Wave = () => (
-  <div className="absolute bottom-0 left-0 right-0 overflow-hidden h-16 -z-10">
+  <div className="absolute bottom-0 left-0 right-0 overflow-hidden h-12 -z-10">
     <div className="absolute bottom-0 left-0 right-0 transform">
-      <div className="relative h-16 animate-wave">
+      <div className="relative h-12 animate-wave">
         <div className="absolute inset-0 opacity-20">
           <svg viewBox="0 0 1000 200" className="w-full h-full">
             <path 
@@ -40,14 +40,14 @@ const SpeechCards = () => {
             cards.forEach((card, index) => {
               setTimeout(() => {
                 card.classList.add('animate-in');
-              }, index * 200); // Stagger the animations
+              }, index * 200);
             });
             observer.unobserve(entry.target);
           }
         });
       },
       {
-        threshold: 0.2, // Trigger when 20% of the component is visible
+        threshold: 0.2,
         rootMargin: '50px',
       }
     );
@@ -64,23 +64,23 @@ const SpeechCards = () => {
   }, []);
 
   return (
-    <div className="w-full bg-transparent/15 py-36 mt-0" ref={containerRef}>
+    <div className="w-full py-12 sm:py-16 lg:py-20" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-8 min-h-[400px]">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 min-h-[250px] sm:min-h-[300px]">
           {speeches.map((speech, index) => (
             <div 
               key={index} 
-              className={`speech-card relative flex-1 p-8 rounded-xl shadow-lg 
+              className={`speech-card relative flex-1 p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg 
                 opacity-0 transition-all duration-1000 ease-out
                 ${index === 0 ? 'bg-gradient-to-br from-slate-800 to-slate-900 -translate-x-full' : 
                 'bg-gradient-to-bl from-indigo-900 to-slate-900 translate-x-full'}
-                hover:shadow-2xl hover:scale-105 transition-transform duration-300`}
+                hover:shadow-2xl hover:scale-102 transition-transform duration-300`}
             >
               <div className="flex flex-col justify-center items-center h-full text-center relative z-10">
-                <h2 className="text-2xl font-bold mb-6 text-white/90 tracking-wide">
+                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white/90 tracking-wide">
                   {speech.title}
                 </h2>
-                <p className="text-gray-300 leading-relaxed max-w-prose">
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-prose">
                   {speech.content}
                 </p>
               </div>
