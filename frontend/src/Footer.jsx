@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -117,17 +117,37 @@ const Footer = () => {
           <div className="text-xs">
             Copyright © 2024 UNIFENCE. All rights reserved.
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
             <span className="text-xs">Follow us on</span>
             <div className="flex space-x-4">
               <a
-                href=" https://www.linkedin.com/company/deepak-industries"
+                href="https://www.linkedin.com/company/deepak-industries"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"
               >
                 <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
                   <Linkedin size={14} />
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/deepakindustries.delhi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                  <Instagram size={14} />
+                </div>
+              </a>
+              <a
+                href="https://www.facebook.com/deepakindustriesindia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                  <Facebook size={14} />
                 </div>
               </a>
             </div>

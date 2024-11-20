@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '/Users/kapil/Documents/freelance/frontend/src/Assets/logo .png'
+import logo from './Assets/logo .png'
 const LogoLoader = () => {
   const [isVisible, setIsVisible] = useState(true);
 

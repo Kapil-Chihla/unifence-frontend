@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Instagram, Facebook, Linkedin, ChevronDown, Menu, X } from "lucide-react";
-import logo from '/Users/kapil/Documents/freelance/frontend/src/Assets/logo .png';
+import logo from './Assets/logo .png';
 import {Link ,useNavigate ,useLocation} from 'react-router-dom';
 function MobileDropdownMenu({ label, children }) {
   const [isOpen, setIsOpen] = useState(false);
