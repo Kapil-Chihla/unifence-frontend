@@ -136,7 +136,7 @@ const Carousel = () => {
                                             className={`
                                                 absolute top-0 left-0 w-full h-full
                                                 transition-all duration-700 ease-in-out object-cover
-                                                ${index === activeIndex ? 'scale-110 brightness-50' : 'scale-100 brightness-50'}
+                                                ${index === activeIndex ? 'scale-110' : 'scale-100 brightness-50'}
                                                 ${index === activeIndex  ? 'shadow-2xl' : ''}
                                             `}
                                         />
@@ -153,7 +153,7 @@ const Carousel = () => {
                                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                                         <h3 
                                             className={`
-                                                text-white font-semibold
+                                                text-primary-turquoise font-semibold
                                                 transition-all duration-700 leading-tight
                                                 max-w-[90%]
                                                 lg:text-2xl md:text-xl sm:text-lg text-base

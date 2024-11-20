@@ -103,7 +103,7 @@ const ProductGrid = ({ products }) => {
                          text-sm sm:text-base md:text-lg font-bold sm:font-extrabold 
                          bg-transparent/90 
                          transition-all duration-500 transform
-                         ${hoveredProduct === product.id ? 'translate-y-[-70px] sm:translate-y-[-75px] md:translate-y-[-100px]' : 'translate-y-0'}`}
+                         ${hoveredProduct === product.id ? 'translate-y-[-70px] sm:translate-y-[-75px] md:translate-y-[-110px]' : 'translate-y-0'}`}
               style={{
                 width: '90%',
                 left: '5%',
