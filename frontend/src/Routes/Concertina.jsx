@@ -4,9 +4,9 @@ import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
 import s2 from '../Assets/s2.jpg';
 import main from '../Assets/concertina/main.jpg'
-import f1 from '../Assets/concertina/f1.png'
+import f1 from '../Assets/concertina/f1.jpg'
 import f2 from '../Assets/concertina/f2.jpeg'
-import f3 from '../Assets/concertina/f3.jpeg'
+import f3 from '../Assets/concertina/f3.jpg'
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 import Short from '../Assets/Short-Blade.webp'

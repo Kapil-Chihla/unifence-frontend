@@ -4,7 +4,6 @@ import Footer from '../Footer';
 import fence from '../Assets/fenceadd.webp';
 import barbed from '../Assets/barbed.jpeg';
 import con from '../Assets/concertina.jpeg';
-import logo from '../Assets/logo.jpeg'
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 

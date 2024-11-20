@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Instagram, Facebook, Linkedin, ChevronDown, Menu, X } from "lucide-react";
-import logo from './Assets/logo.jpeg';
+import logo from '/Users/kapil/Documents/freelance/frontend/src/Assets/logo .png';
 import {Link ,useNavigate ,useLocation} from 'react-router-dom';
 function MobileDropdownMenu({ label, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -203,8 +203,8 @@ useEffect(() => {
               <MobileNestedDropdownMenu label="Railway Electrification Structures">
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Weld Mesh Fence">
-                <div onClick={() => handleLinkClick('/unifence-suraksh')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
-                  Unifence Suraksh
+                <div onClick={() => handleLinkClick('/unifence-suraksha')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                  Unifence Suraksha
                 </div>
                 <div onClick={() => handleLinkClick('/unifence-fencade')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Unifence Fencade
@@ -219,8 +219,8 @@ useEffect(() => {
                 </div>
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Fence Add-Ons">
-                <div onClick={() => handleLinkClick('/fence-add-ons')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
-                  Unifence Kisen Shanti
+                <div onClick={() => handleLinkClick('/unifence-kisan-shanti')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                  Unifence Kisan Shanti
                 </div>
                 <div onClick={() => handleLinkClick('/unifence-concertina-coil')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Unifence Concertina Coil
@@ -237,14 +237,31 @@ useEffect(() => {
             <div onClick={() => handleLinkClick('/contact')} className="w-full py-4 px-6 text-white font-semibold text-lg cursor-pointer">
               Contact Us
             </div>
-            <a
-                  href=" https://www.linkedin.com/company/deepak-industries/" // Replace with your LinkedIn URL
+            <div className="flex flex-row items-center justify-center space-x-4">
+              <a
+                  href="https://www.linkedin.com/company/deepak-industries/" // Replace with your LinkedIn URL
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center mt-4 text-white hover:opacity-80 transition-opacity"
                 >
                   <Linkedin size={20} />
                 </a>
+                <a
+                  href="https://www.instagram.com/deepakindustries.delhi/" // Replace with your LinkedIn URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center mt-4 text-white hover:opacity-80 transition-opacity"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/deepakindustriesindia" // Replace with your LinkedIn URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center mt-4 text-white hover:opacity-80 transition-opacity"
+                >
+                  <Facebook size={20} />
+                </a></div>
           </div>
         </div>
       )}
@@ -274,7 +291,7 @@ useEffect(() => {
                 <DesktopNestedDropdownMenu label={`Railway Electrification Structures`}>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Weld Mesh Fence`}>
-                    <Link to="/unifence-suraksh" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Suraksh</Link>
+                    <Link to="/unifence-suraksha" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Suraksha</Link>
                     <Link to="/unifence-fencade" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Fencade</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Woven Mesh`}>
@@ -282,7 +299,7 @@ useEffect(() => {
                 <Link to="/honeycomb-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Honeycomb Fence</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Fence Add-Ons`}>
-                <Link to="/unifence-kisen-shanti" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Kisen Shanti</Link>
+                <Link to="/unifence-kisan-shanti" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Kisan Shanti</Link>
                 <Link to="/unifence-concertina-coil" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Concertina Coil</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Gabions`}>
@@ -299,8 +316,14 @@ useEffect(() => {
           </nav>
 
           <div className="flex space-x-4 text-primary-navy">
-            <a href=" https://www.linkedin.com/company/deepak-industries/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
+            <a href="https://www.linkedin.com/company/deepak-industries/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
               <Linkedin size={20} />
+            </a>
+            <a href="https://www.instagram.com/deepakindustries.delhi/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
+              <Instagram size={20} />
+            </a>
+            <a href="https://www.facebook.com/deepakindustriesindia" target="_blank" rel="noopener noreferrer" className="hover:text-primary-turquoise transition-colors">
+              <Facebook size={20} />
             </a>
           </div>
         </div>

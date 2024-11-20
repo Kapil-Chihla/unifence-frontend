@@ -1,8 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
-import s2 from '../Assets/s2.jpg';
-import logo from '../Assets/logo.jpeg'
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 import galv from '../Assets/Heavy-Galvanized-Wires.webp'

@@ -4,9 +4,9 @@ import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
 import s2 from '../Assets/s2.jpg';
 import main from '../Assets/kisenshanti/main.jpg';
-import f1 from '../Assets/kisenshanti/f1.webp'
+import f1 from '../Assets/kisenshanti/f1.jpg'
 import f2 from '../Assets/kisenshanti/f2.png'
-import f3 from '../Assets/kisenshanti/f3.jpeg'
+import f3 from '../Assets/kisenshanti/f3.jpg'
 import f4 from '../Assets/kisenshanti/f4.png'
 import f5 from '../Assets/kisenshanti/f5.png'
 import f6 from '../Assets/kisenshanti/f6.png'
@@ -26,7 +26,7 @@ const Hero = () => (
     />
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
-      Unifence Kisen Shanti
+      Unifence Kisan Shanti
       </h1>
       <div className="w-16 sm:w-28 md:w-32 
                 h-0.5 sm:h-[3px] md:h-1 
@@ -35,7 +35,7 @@ const Hero = () => (
                 mb-6 sm:mb-8 md:mb-12 lg:mb-16">
       </div>
       <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
-      Unifence takes pride in presenting the traditional Unifence Kisen Kanti in a fresh, innovative form – Unifence Kisen Kanti! Featuring Red Barbs for improved visibility, Unifence Kisen Kanti is backed by our unparalleled quality assurance.
+      Unifence takes pride in presenting the traditional Unifence Kisan Kanti in a fresh, innovative form – Unifence Kisan Shanti! Featuring Red Barbs for improved visibility, Unifence Kisan Kanti is backed by our unparalleled quality assurance.
       </p>
       <Link
         to="/contact"

@@ -32,13 +32,13 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/our-approvals" element={<OurApprovals/>} />
-          <Route path="/unifence-suraksh" element={<UniferenceSuraksh/>} />
+          <Route path="/unifence-suraksha" element={<UniferenceSuraksh/>} />
           <Route path="/power-transmission-and-distribution" element={<PowerTransmission/>} />
           <Route path="/railway-electrification-structures" element={<Railway/>} />
           <Route path="/unifence-fencade" element={<UnifenceFencade/>} />
           <Route path="/chain-link-fence" element={<ChainLinkFence/>} />
           <Route path="/honeycomb-fence" element={<HoneyComb/>} />
-          <Route path="/unifence-kisen-shanti" element={<KishenShanti/>} />
+          <Route path="/unifence-kisan-shanti" element={<KishenShanti/>} />
           <Route path="/unifence-concertina-coil" element={<Concertina/>} />
           <Route path="/fence-add-ons" element={<FenceAddOns/>} />
           <Route path="/woven-mesh" element={<WovenMesh/>} />

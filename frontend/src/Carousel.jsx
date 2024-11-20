@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import power  from './Assets/powerslide1.jpg'
-import woven from './Assets/wovenfence.jpg'
-import weld from './Assets/weldslide3.jpg'
-import fence from './Assets/fenceslide4.webp'
-import gabions from './Assets/gabionsslide5.webp'
+import woven from './Assets/wovenslide.jpg'
+import weld from './Assets/weldslide.jpeg'
+import fence from './Assets/fenceslide.jpg'
+import gabions from './Assets/gabionslide.jpeg'
 import wires from './Assets/Wires.webp'
 import other from './Assets/other.jpeg'
-import rail from './Assets/railway-electricfication.jpg';
+import rail from './Assets/railwayslide.jpg';
 const slides = [
     { image: power, title: 'Power Transmission and Distribution' },
     { image: woven, title: 'Woven Mesh' },

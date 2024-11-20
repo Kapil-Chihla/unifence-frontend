@@ -2,7 +2,6 @@ import React , {useEffect , useState} from 'react';
 import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
-import s1 from '../Assets/s1.jpg';
 import CoolLoader from '../CoolLoader';
 import railway from '../Assets/Railway.jpg'
 import rail from '../Assets/Railway.webp'
@@ -151,7 +150,7 @@ const RailwayElectrification = () => {
             Unifence's masts and portals provide the structural foundation for these overhead contact systems, enabling the suspension and distribution of contact wires across railway tracks. The company's cantilever structures further extend the reach of these contact wires, ensuring comprehensive coverage and connectivity.
             </p>
             <p>
-            Unifence maintains a nationwide presence, with a robust network of offices and partners, allowing for timely delivery and responsive customer service. The company's commitment to quality is reflected in its ISO certifications, demonstrating adherence to the highest standards of management and occupational health and safety.
+            Unifence maintains a nationwide presence with a robust network of offices and partners, allowing for timely delivery and responsive customer service. The company's commitment to quality is reflected in its ISO certifications, demonstrating adherence to the highest standards of management and occupational health and safety.
             </p>
           </div>
         </div>
