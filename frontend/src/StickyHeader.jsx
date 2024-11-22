@@ -219,8 +219,8 @@ useEffect(() => {
                 </div>
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Fence Add-Ons">
-                <div onClick={() => handleLinkClick('/unifence-kisan-shanti')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
-                  Unifence Kisan Shanti
+                <div onClick={() => handleLinkClick('/unifence-kisan-shakti')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                  Unifence Kisan Shakti
                 </div>
                 <div onClick={() => handleLinkClick('/unifence-concertina-coil')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Unifence Concertina Coil
@@ -299,7 +299,7 @@ useEffect(() => {
                 <Link to="/honeycomb-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Honeycomb Fence</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Fence Add-Ons`}>
-                <Link to="/unifence-kisan-shanti" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Kisan Shanti</Link>
+                <Link to="/unifence-kisan-shakti" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Kisan Shakti</Link>
                 <Link to="/unifence-concertina-coil" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Concertina Coil</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Gabions`}>

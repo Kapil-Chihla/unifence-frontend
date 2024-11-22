@@ -38,7 +38,7 @@ function App() {
           <Route path="/unifence-fencade" element={<UnifenceFencade/>} />
           <Route path="/chain-link-fence" element={<ChainLinkFence/>} />
           <Route path="/honeycomb-fence" element={<HoneyComb/>} />
-          <Route path="/unifence-kisan-shanti" element={<KishenShanti/>} />
+          <Route path="/unifence-kisan-shakti" element={<KishenShanti/>} />
           <Route path="/unifence-concertina-coil" element={<Concertina/>} />
           <Route path="/fence-add-ons" element={<FenceAddOns/>} />
           <Route path="/woven-mesh" element={<WovenMesh/>} />

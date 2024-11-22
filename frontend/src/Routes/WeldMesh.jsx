@@ -39,7 +39,7 @@ const Hero = () => (
                 mb-4 sm:mb-6 md:mb-8">
 </div>
       <p className="text-sm md:text-base lg:text-2xl font-extralight mt-4">
-          A strong welded mesh system having anti climb & anti cut features along with high visibility making it ideal for medium and high security.
+      A strong welded mesh system has anti-climb and anti-cut features along with high visibility, making it ideal for medium and high security.
       </p>
       <Link
   to="/contact"
@@ -163,9 +163,9 @@ const Products = () => {
       {
         id:1,
         image: surk,
-        title: 'UNIFENCE SURAKSH',
+        title: 'UNIFENCE SURAKSHA',
         description: 'Best choice for Security, Durability, Anti-Climb, Visibility, Strength, and Longevity.',
-        link: '/unifence-suraksh',
+        link: '/unifence-suraksha',
       },
       {
         id:2,

@@ -137,9 +137,9 @@ const ProductGrid = ({ products }) => {
       {
         id:1,
         image: barbed,
-        title: 'UNIFENCE KISEN SHANTI',
+        title: 'UNIFENCE KISAN SHAKTI',
         description: 'Barbed wires offer a strong, imposing barrier that enhances security and prevents intrusion.',
-        link: '/unifence-kisen-shanti',
+        link: '/unifence-kisan-shakti',
       },
       {
         id:2,

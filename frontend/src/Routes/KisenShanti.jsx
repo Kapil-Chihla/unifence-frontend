@@ -26,7 +26,7 @@ const Hero = () => (
     />
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
-      Unifence Kisan Shanti
+      Unifence Kisan Shakti
       </h1>
       <div className="w-16 sm:w-28 md:w-32 
                 h-0.5 sm:h-[3px] md:h-1 
@@ -35,7 +35,7 @@ const Hero = () => (
                 mb-6 sm:mb-8 md:mb-12 lg:mb-16">
       </div>
       <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
-      Unifence takes pride in presenting the traditional Unifence Kisan Kanti in a fresh, innovative form – Unifence Kisan Shanti! Featuring Red Barbs for improved visibility, Unifence Kisan Kanti is backed by our unparalleled quality assurance.
+      Unifence takes pride in presenting the traditional Unifence Kisan Shakti in a fresh, innovative form – Unifence Kisan Shakti! Featuring Red Barbs for improved visibility, Unifence Kisan Shakti is backed by our unparalleled quality assurance.
       </p>
       <Link
         to="/contact"
