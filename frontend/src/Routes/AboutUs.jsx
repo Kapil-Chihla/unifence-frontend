@@ -46,11 +46,7 @@ const AboutUs = () => {
       <div className="w-full px-3 sm:px-4 md:px-6 py-6 sm:py-8 md:py-10 lg:py-12">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-navy-800 leading-relaxed">
-            Deepak Industries is an ISO 9001:2015 and ISO 45001:2008 certified
-            technology company founded in 2006. Led by visionary 
-            Director Mr. Deepak Goyal, the company offers a comprehensive 
-            range of products and services in Telecommunication, Solar Solutions, 
-            and Security & Surveillance.
+          Deepak Industries was established in 2006 and is a technology firm accredited by ISO 9001:2015 and ISO 45001:2008. The company provides a wide range of goods and services in the areas of telecommunication, solar solutions, and security and surveillance, under the direction of visionary director Mr. Deepak Goyal.
           </p>
         </div>
       </div>
@@ -137,20 +133,15 @@ const AboutUs = () => {
       {/* Text Section - Adjusted padding and spacing */}
       <div className="py-4 sm:py-6 md:py-8 lg:py-12 text-white">
         <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">
-        Headquartered in Delhi, Deepak Industries operates 
-            nationwide through a robust network of offices and reliable partners. 
-            The company's mission is to exceed customer expectations by delivering top-notch, 
-            intelligent, and converged communication solutions tailored to individual client needs. 
-            Deepak Industries is driven by a clear vision to be recognized as an industry leader, 
-            admired for its unmatched support and reliability.
+        With a strong network of offices and trustworthy partners, Deepak Industries, which has its headquarters in delhi, works all throughout the country. 
+            By providing superior, intelligent, and integrated communication solutions that are customized to meet the demands of each individual client, the company hopes to surpass consumer expectations. 
+            Deepak Industries aspires to be an industry leader known for providing exceptional service and reliability.
+
         </p>
         <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">
-        The company's motto, "No Compromise," underscores its unwavering commitment to 
-            excellence and ethical standards. This guiding principle fuels Deepak's continuous 
-            innovation and dedication to people development, resulting in superior products and services. 
-            Deepak Industries' efficient customer service and pioneering approach have earned the trust 
-            and confidence of its clients, 
-            solidifying its position as a premier technology solutions provider in the market.
+        The business's motto, "No Compromise," highlights its steadfast dedication to morality and excellence. This tenet drives Deepak's ongoing creativity and commitment to human growth, which produces excellent goods and services. 
+            Because of its innovative approach and effective customer service, Deepak Industries has gained the faith and trust of its clients, securing its place as the industry's leading supplier of technology solutions.
+
         </p>
       </div>
     </div>

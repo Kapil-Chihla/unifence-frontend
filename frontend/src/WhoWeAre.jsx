@@ -77,7 +77,7 @@ export default function WhoWeAre() {
         <div className="flex items-center justify-center w-full px-2 sm:px-4">
           <p className="text-sm sm:text-base md:text-lg lg:text-xl font-extralight text-primary-gray max-w-4xl text-center leading-relaxed animate-fadeIn">
             Deepak Industries is a technology-driven company specializing in
-            Telecommunication, Solar Solutions, and Security & Surveillance.
+            telecommunication, solar solutions, and security & surveillance.
             Founded in 2006, we are ISO-certified and committed to delivering
             innovative, reliable solutions nationwide.
           </p>

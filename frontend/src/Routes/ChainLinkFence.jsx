@@ -5,7 +5,7 @@ import Footer from '../Footer';
 import main from '../Assets/chainlink/main.avif';
 import s2 from '../Assets/s2.jpg'
 import FeatureCard from '../FeatureCard';
-import f1 from '../Assets/chainlink/f1.jpeg';
+import f1 from '../Assets/chainlink/f1.jpg';
 import f2 from '../Assets/chainlink/f2.png';
 import f3 from '../Assets/chainlink/f3.jpeg'
 import f4 from '../Assets/chainlink/f4.png'
@@ -33,7 +33,7 @@ const Hero = () => (
                 mb-6 sm:mb-8 md:mb-12 lg:mb-16">
       </div>
       <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-medium mt-2 sm:mt-3 md:mt-4 px-4">
-      When selecting the perfect Chain Link Fence for your property, factors like fabric type, wire diameter, mesh size, and surface coatings are crucial. With Unifence, you have access to a diverse selection of options tailored to meet your specific site needs.
+      When selecting the perfect chain link fence for your property, factors like fabric type, wire diameter, mesh size, and surface coatings are crucial. With Unifence, you have access to a diverse selection of options tailored to meet your specific site needs.
       </p>
       <Link
         to="/contact"
@@ -385,7 +385,7 @@ const Applications = () => {
     },
     {
       title: "PERIPHERY",
-      description: "Schools, whether catering to toddlers or young children, can benefit greatly from chain link fences to create well-defined spaces for play and outdoor activities. This not only provides peace of mind to school administrators and parents but also allows children to enjoy themselves safely."
+      description: "Schools, whether catering to toddlers or young children, can greatly benefit from chain link fences to create well-defined spaces for play and outdoor activities. This not only provides peace of mind to school administrators and parents but also allows children to enjoy themselves safely."
     }
   ];
 

@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import CoolLoader from '../CoolLoader';
 import railway from '../Assets/Railway.jpg'
-import rail from '../Assets/Railway.webp'
+import rail from '../Assets/Railway2.jpg'
 const RailwayElectrification = () => {
   const [isLoading, setIsLoading] = useState(true);
 

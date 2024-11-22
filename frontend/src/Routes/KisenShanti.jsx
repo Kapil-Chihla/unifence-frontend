@@ -5,11 +5,11 @@ import Footer from '../Footer';
 import s2 from '../Assets/s2.jpg';
 import main from '../Assets/kisenshanti/main.jpg';
 import f1 from '../Assets/kisenshanti/f1.jpg'
-import f2 from '../Assets/kisenshanti/f2.png'
+import f2 from '../Assets/kisenshanti/f2.jpg'
 import f3 from '../Assets/kisenshanti/f3.jpg'
-import f4 from '../Assets/kisenshanti/f4.png'
-import f5 from '../Assets/kisenshanti/f5.png'
-import f6 from '../Assets/kisenshanti/f6.png'
+import f4 from '../Assets/kisenshanti/f4.jpg'
+import f5 from '../Assets/kisenshanti/f5.jpg'
+import f6 from '../Assets/kisenshanti/f6.jpg'
 import FeatureCard from '../FeatureCard';
 import Long from '../Assets/Long-Life.webp';
 import { Link } from 'react-router-dom';
