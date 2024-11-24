@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import power  from './Assets/powerslide1.jpg'
-import woven from './Assets/wovenslide.jpg'
+import woven from './Assets/wovenslide.jpeg'
 import weld from './Assets/weldslide.jpeg'
 import fence from './Assets/fenceslide.jpg'
 import gabions from './Assets/gabionslide.jpeg'
 import wires from './Assets/Wires.webp'
 import other from './Assets/other.jpeg'
-import rail from './Assets/railwayslide.jpg';
+import rail from './Assets/railwayslide.jpeg';
 const slides = [
     { image: power, title: 'Power Transmission and Distribution' },
     { image: woven, title: 'Woven Mesh' },
@@ -79,14 +79,14 @@ const Carousel = () => {
     return (
         <div className="relative w-full -mb-20 md:mb-10">
             <button
-                className="absolute left-8 hidden lg:block bottom-[20%] text-white bg-orange-500 p-2 rounded-full shadow-lg cursor-pointer z-10 hover:bg-orange-600 transition-colors"
+                className="absolute left-14 hidden lg:block bottom-[20%] text-white bg-orange-500 p-2 rounded-full shadow-lg cursor-pointer z-10 hover:bg-orange-600 transition-colors"
                 onClick={() => document.querySelector('.slick-prev')?.click()}
             >
                 <ChevronLeft />
             </button>
 
             <button
-                className="absolute hidden lg:block left-8 bottom-[30%] text-white bg-orange-500 p-2 rounded-full shadow-lg cursor-pointer z-10 hover:bg-orange-600 transition-colors"
+                className="absolute hidden lg:block left-14 bottom-[30%] text-white bg-orange-500 p-2 rounded-full shadow-lg cursor-pointer z-10 hover:bg-orange-600 transition-colors"
                 onClick={() => document.querySelector('.slick-next')?.click()}
             >
                 <ChevronRight />
@@ -105,7 +105,7 @@ const Carousel = () => {
                                     className={`
                                         relative overflow-hidden
                                         transition-all duration-700 ease-in-out
-                                        ${index === activeIndex ? 'z-30' : 'z-10'}
+                                        ${index === activeIndex ? 'z-0' : 'z-10'}
                                     `}
                                 >
                                     <div 
@@ -135,8 +135,8 @@ const Carousel = () => {
                                             alt={title}
                                             className={`
                                                 absolute top-0 left-0 w-full h-full
-                                                transition-all duration-700 ease-in-out object-cover
-                                                ${index === activeIndex ? 'scale-110' : 'scale-100 brightness-50'}
+                                                transition-all duration-700 ease-in-out object-fill
+                                                ${index === activeIndex ? 'scale-70' : 'scale-100 brightness-50'}
                                                 ${index === activeIndex  ? 'shadow-2xl' : ''}
                                             `}
                                         />

@@ -280,7 +280,7 @@ const VariantSection = () => {
             <div className="relative">
               <img
                 src={vari}
-                alt="Garrison fence installation"
+                alt="Unifence Suraksha installation"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 rounded-lg shadow-inner pointer-events-none"></div>
@@ -290,7 +290,7 @@ const VariantSection = () => {
           {/* Text for mobile */}
           <div>
             <p className="text-navy-800 text-sm sm:text-base leading-relaxed">
-              The Garrison fence is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
+              The Unifence Suraksha is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
             </p>
           </div>
         </div>
@@ -306,7 +306,7 @@ const VariantSection = () => {
               <div className="h-1 w-32 bg-gradient-to-r from-green-600 to-cyan-400 mt-4"></div>
             </div>
             <p className="text-navy-800 text-lg leading-relaxed">
-              The Garrison fence is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
+              The Unifence Suraksha is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
             </p>
           </div>
           
@@ -315,7 +315,7 @@ const VariantSection = () => {
             <div className="relative">
               <img
                 src={vari}
-                alt="Garrison fence installation"
+                alt="Unifence Suraksha installation"
                 className="w-full h-auto rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
               />
               <div className="absolute inset-0 rounded-lg shadow-inner pointer-events-none"></div>
