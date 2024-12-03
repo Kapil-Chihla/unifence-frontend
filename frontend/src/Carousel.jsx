@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import power  from './Assets/powerslide1.jpg'
-import woven from './Assets/wovenslide.jpeg'
-import weld from './Assets/weldslide.jpeg'
-import fence from './Assets/fenceslide.jpg'
-import gabions from './Assets/gabionslide.jpeg'
-import wires from './Assets/Wires.webp'
-import other from './Assets/other.jpeg'
+import power from './Assets/powerslide1.jpg';
+import woven from './Assets/wovenslide.jpeg';
+import weld from './Assets/weldslide.jpeg';
+import fence from './Assets/fenceslide.jpg';
+import gabions from './Assets/gabionslide.jpeg';
+import wires from './Assets/Wires.webp';
+import other from './Assets/other.jpeg';
 import rail from './Assets/railwayslide.jpeg';
+
 const slides = [
     { image: power, title: 'Power Transmission and Distribution' },
     { image: woven, title: 'Woven Mesh' },
@@ -23,7 +24,30 @@ const slides = [
 const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
-    
+    const [isWindows, setIsWindows] = useState(false);
+
+    useEffect(() => {
+        // Check if the platform is Windows
+        setIsWindows(navigator.platform.toLowerCase().includes('win'));
+    }, []);
+
+    const getImageDimensions = (isActive) => {
+        if (isWindows) {
+            return {
+                lg: isActive ? 'lg:h-[490px]' : 'lg:h-[440px]',
+                md: isActive ? 'md:h-[400px]' : 'md:h-[360px]',
+                sm: isActive ? 'sm:h-[350px]' : 'sm:h-[310px]',
+                base: isActive ? 'h-[320px]' : 'h-[280px]'
+            };
+        }
+        return {
+            lg: isActive ? 'lg:h-[590px]' : 'lg:h-[540px]',
+            md: isActive ? 'md:h-[480px]' : 'md:h-[440px]',
+            sm: isActive ? 'sm:h-[420px]' : 'sm:h-[380px]',
+            base: isActive ? 'h-[380px]' : 'h-[340px]'
+        };
+    };
+
     const settings = {
         infinite: true,
         slidesToShow: 3,
@@ -95,80 +119,81 @@ const Carousel = () => {
             <div className="relative h-[590px] lg:ml-40">
                 <div className="absolute w-full max-w-screen overflow-hidden">
                     <Slider {...settings}>
-                        {slides.map(({ image, title }, index) => (
-                            <div 
-                                key={index} 
-                                className="transition-all duration-700 ease-in-out"
-                                style={{ margin: 0, padding: 0 }}
-                            >
+                        {slides.map(({ image, title }, index) => {
+                            const dimensions = getImageDimensions(index === activeIndex);
+                            return (
                                 <div 
-                                    className={`
-                                        relative overflow-hidden
-                                        transition-all duration-700 ease-in-out
-                                        ${index === activeIndex ? 'z-0' : 'z-10'}
-                                    `}
+                                    key={index} 
+                                    className="transition-all duration-700 ease-in-out"
+                                    style={{ margin: 0, padding: 0 }}
                                 >
                                     <div 
                                         className={`
-                                            absolute inset-0 transition-all duration-700
-                                            ${index === activeIndex ? 'bg-transparent' : 'bg-gradient-to-b from-gray-700 to-gray-900'}
-                                        `} 
-                                    />
-                                    
-                                    <div 
-                                        className={`
-                                            absolute inset-0 transition-opacity duration-700
-                                            ${index === activeIndex  ? 'opacity-0' : 'opacity-75 bg-gray-900'}
-                                        `} 
-                                    />
-                                    
-                                    <div className={`
-                                        relative
-                                        transition-all duration-700 ease-in-out
-                                        ${(index === activeIndex)
-                                            ? 'lg:w-[560px] lg:h-[590px] md:w-[420px] md:h-[480px] sm:w-[360px] sm:h-[420px] w-[320px] h-[380px]' 
-                                            : 'lg:w-[520px] lg:h-[540px] md:w-[380px] md:h-[440px] sm:w-[320px] sm:h-[380px] w-[280px] h-[340px]'
-                                        }
-                                    `}>
-                                        <img
-                                            src={image}
-                                            alt={title}
+                                            relative overflow-hidden
+                                            transition-all duration-700 ease-in-out
+                                            ${index === activeIndex ? 'z-0' : 'z-10'}
+                                        `}
+                                    >
+                                        <div 
                                             className={`
-                                                absolute top-0 left-0 w-full h-full
-                                                transition-all duration-700 ease-in-out object-fill
-                                                ${index === activeIndex ? 'scale-70' : 'scale-100 brightness-50'}
-                                                ${index === activeIndex  ? 'shadow-2xl' : ''}
+                                                absolute inset-0 transition-all duration-700
+                                                ${index === activeIndex ? 'bg-transparent' : 'bg-gradient-to-b from-gray-700 to-gray-900'}
+                                            `} 
+                                        />
+                                        
+                                        <div 
+                                            className={`
+                                                absolute inset-0 transition-opacity duration-700
+                                                ${index === activeIndex ? 'opacity-0' : 'opacity-75 bg-gray-900'}
+                                            `} 
+                                        />
+                                        
+                                        <div className={`
+                                            relative
+                                            transition-all duration-700 ease-in-out
+                                            lg:w-[560px] md:w-[420px] sm:w-[360px] w-[320px]
+                                            ${dimensions.lg} ${dimensions.md} ${dimensions.sm} ${dimensions.base}
+                                        `}>
+                                            <img
+                                                src={image}
+                                                alt={title}
+                                                className={`
+                                                    absolute top-0 left-0 w-full h-full
+                                                    transition-all duration-700 ease-in-out object-fill
+                                                    ${index === activeIndex ? 'scale-70' : 'scale-100 brightness-50'}
+                                                    ${index === activeIndex ? 'shadow-2xl' : ''}
+                                                `}
+                                            />
+                                        </div>
+
+                                        <div 
+                                            className={`
+                                                absolute inset-0 
+                                                ${index === activeIndex ? 'opacity-0' : 'opacity-60 bg-gradient-to-t from-gray-900 via-gray-800 to-gray-900'}
+                                                transition-opacity duration-700
                                             `}
                                         />
-                                    </div>
 
-                                    <div 
-                                        className={`
-                                            absolute inset-0 
-                                            ${index === activeIndex  ? 'opacity-0' : 'opacity-60 bg-gradient-to-t from-gray-900 via-gray-800 to-gray-900'}
-                                            transition-opacity duration-700
-                                        `}
-                                    />
-
-                                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                        <h3 
-                                            className={`
-                                                text-primary-turquoise font-semibold
-                                                transition-all duration-700 leading-tight
-                                                max-w-[90%]
-                                                lg:text-2xl md:text-xl sm:text-lg text-base
-                                                ${index === activeIndex
-                                                    ? 'opacity-100 translate-y-0' 
-                                                    : 'opacity-50 translate-y-2'
-                                                }
-                                            `}
-                                        >
-                                            {title}
-                                        </h3>
+                                        <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                                            <h3 
+                                                className={`
+                                                    text-primary-turquoise font-semibold
+                                                    transition-all duration-700 leading-tight
+                                                    max-w-[90%]
+                                                    lg:text-2xl md:text-xl sm:text-lg text-base
+                                                    ${index === activeIndex
+                                                        ? 'opacity-100 translate-y-0' 
+                                                        : 'opacity-50 translate-y-2'
+                                                    }
+                                                `}
+                                            >
+                                                {title}
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </Slider>
                 </div>
             </div>
