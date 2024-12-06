@@ -2,6 +2,15 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+    <loc>https://yourwebsite.com</loc>
+    <lastmod>2024-12-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+        <image:loc>https://unifence.in/public/favicon-32x32.png</image:loc>
+    </image:image>
+</url>
+<url>
 	<loc>https://unifence.in/</loc>
 	<lastmod>2024-11-20T10:39:25+01:00</lastmod>
 	<priority>0.6</priority>
