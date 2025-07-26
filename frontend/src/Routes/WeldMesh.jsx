@@ -163,9 +163,9 @@ const Products = () => {
       {
         id:1,
         image: surk,
-        title: 'UNIFENCE SURAKSHA',
+        title: '358 Anti Climb fence',
         description: 'Best choice for Security, Durability, Anti-Climb, Visibility, Strength, and Longevity.',
-        link: '/unifence-suraksha',
+        link: '/358-anti-climb-fence',
       },
       {
         id:2,

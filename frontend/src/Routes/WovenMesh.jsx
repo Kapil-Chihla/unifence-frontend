@@ -140,13 +140,6 @@ const Products = () => {
         description: 'Chainlink fences are durable, cost-effective, and versatile fencing solutions ideal for securing residential, industrial, and sports areas.',
         link: '/chain-link-fence',
       },
-      {
-        id:2,
-        image: honey,
-        title: 'HONEYCOMB FENCE',
-        description: 'Honeycomb fences offer strong durability with an attractive, interlocking design. They provide both security and visibility, making them ideal for various uses.',
-        link: '/honeycomb-fence',
-      },
     ];
   
     return (

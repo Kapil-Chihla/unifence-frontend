@@ -32,7 +32,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/our-approvals" element={<OurApprovals/>} />
-          <Route path="/unifence-suraksha" element={<UniferenceSuraksh/>} />
+          <Route path="/358-anti-climb-fence" element={<UniferenceSuraksh/>} />
           <Route path="/power-transmission-and-distribution" element={<PowerTransmission/>} />
           <Route path="/railway-electrification-structures" element={<Railway/>} />
           <Route path="/unifence-fencade" element={<UnifenceFencade/>} />

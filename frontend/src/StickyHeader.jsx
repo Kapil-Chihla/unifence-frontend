@@ -203,8 +203,8 @@ useEffect(() => {
               <MobileNestedDropdownMenu label="Railway Electrification Structures">
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Weld Mesh Fence">
-                <div onClick={() => handleLinkClick('/unifence-suraksha')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
-                  Unifence Suraksha
+                <div onClick={() => handleLinkClick('/358-anti-climb-fence')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
+                  358 Anti Climb fence
                 </div>
                 <div onClick={() => handleLinkClick('/unifence-fencade')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Unifence Fencade
@@ -213,9 +213,6 @@ useEffect(() => {
               <MobileNestedDropdownMenu label="Woven Mesh">
                 <div onClick={() => handleLinkClick('/woven-mesh')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
                   Chain Link Fence
-                </div>
-                <div onClick={() => handleLinkClick('/honeycomb-fence')} className="block py-3 px-10 text-white hover:bg-primary-turquoise transition-colors cursor-pointer">
-                  Honeycomb Fence
                 </div>
               </MobileNestedDropdownMenu>
               <MobileNestedDropdownMenu label="Fence Add-Ons">
@@ -291,12 +288,11 @@ useEffect(() => {
                 <DesktopNestedDropdownMenu label={`Railway Electrification Structures`}>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Weld Mesh Fence`}>
-                    <Link to="/unifence-suraksha" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Suraksha</Link>
+                    <Link to="/358-anti-climb-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">358 Anti Climb fence</Link>
                     <Link to="/unifence-fencade" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Fencade</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Woven Mesh`}>
                 <Link to="/chain-link-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Chain Link Fence</Link>
-                <Link to="/honeycomb-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Honeycomb Fence</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Fence Add-Ons`}>
                 <Link to="/unifence-kisan-shakti" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Kisan Shakti</Link>

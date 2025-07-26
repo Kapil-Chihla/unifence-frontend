@@ -4,13 +4,12 @@ import StickyHeader from '../StickyHeader';
 import Footer from '../Footer';
 import FeatureCard from '../FeatureCard';
 import vari from '../Assets/Kavachfence/varient.webp';
-import diff from '../Assets/Kavachfence/Difficult-to-Climb.webp'
-import kf1 from '../Assets/Kavachfence/kf1.jpg';
-import kf3 from '../Assets/Kavachfence/kf3.jpeg';
+import diff from '../Assets/diff.jpeg'
+import kf1 from '../Assets/kf1.jpeg';
 import mod from '../Assets/Kavachfence/modular.webp'
 import kf5 from '../Assets/Kavachfence/kf5.jpeg'
 import long from '../Assets/Kavachfence/longevity.webp'
-import write from '../Assets/Kavachfence/Writeup-Image-1.webp'
+import write from '../Assets/Kavachfence/write.jpeg'
 import s2 from '../Assets/s2.jpg'
 import { Link } from 'react-router-dom';
 import ApplicationsBlock from '../ApplicationsBlock';
@@ -158,22 +157,22 @@ const Features = () => {
     },
     {
       title: 'High Visibility',
-      image: kf3,
+      image: write,
       description: 'Despite its density, the fence offers clear visibility, making it CCTV-friendly and allowing intruders to be easily spotted.'
     },
     {
         title: 'Long Life',
-        image: long,
+        image: diff,
         description: 'Crafted from galvanized steel and powder-coated, the fence offers excellent corrosion and dust resistance, along with an aesthetically appealing finish.'
     },
     {
         title: 'Modular',
-        image: mod,
+        image: write,
         description: 'Special fixtures make the system modular and easy to install, eliminating the need for welding or fabrication.'
     },
     {
         title: 'Strong',
-        image: kf5,
+        image: kf1,
         description: 'The panels are made with high weld strength, providing enhanced stability and durability under impact.'
     }
 ];
@@ -280,7 +279,7 @@ const VariantSection = () => {
             <div className="relative">
               <img
                 src={vari}
-                alt="Unifence Suraksha installation"
+                alt="358 Anti Climb fence installation"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 rounded-lg shadow-inner pointer-events-none"></div>
@@ -290,7 +289,7 @@ const VariantSection = () => {
           {/* Text for mobile */}
           <div>
             <p className="text-navy-800 text-sm sm:text-base leading-relaxed">
-              The Unifence Suraksha is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
+              The 358 Anti Climb fence is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
             </p>
           </div>
         </div>
@@ -306,7 +305,7 @@ const VariantSection = () => {
               <div className="h-1 w-32 bg-gradient-to-r from-green-600 to-cyan-400 mt-4"></div>
             </div>
             <p className="text-navy-800 text-lg leading-relaxed">
-              The Unifence Suraksha is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
+              The 358 Anti Climb fence is a version of Unifence® specifically created for defense applications. It utilizes robust, larger circular hollow section poles and a three-panel design, which simplifies installation on poles and enhances transportability. The fence is equipped with specially designed Y-arms that support large-diameter concertina coils, providing effective deterrence against climbing or vaulting over the fence.
             </p>
           </div>
           
@@ -315,7 +314,7 @@ const VariantSection = () => {
             <div className="relative">
               <img
                 src={vari}
-                alt="Unifence Suraksha installation"
+                alt="358 Anti Climb fence installation"
                 className="w-full h-auto rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
               />
               <div className="absolute inset-0 rounded-lg shadow-inner pointer-events-none"></div>
@@ -336,7 +335,7 @@ const VariantSection = () => {
       />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3 md:mb-4 font-extrabold">
-        Unifence Suraksha
+        358 Anti Climb fence
         </h1>
         <div className="w-16 sm:w-28 md:w-32 
                   h-0.5 sm:h-[3px] md:h-1 
