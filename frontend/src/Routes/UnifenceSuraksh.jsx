@@ -17,35 +17,35 @@ import ApplicationsBlock from '../ApplicationsBlock';
 const SpecificationsTable = () => {
   const specifications = [
     {
-      height: 2100,
-      width: 2971,
+      height: 967,
+      width: 2667,
       meshSize: '76.2 x 12.7',
-      wireVertical: '3 mm',
-      wireHorizontal: '3 mm',
-      coating: 'PPC/TPC'
-    },
-    {
-      height: 2400,
-      width: 2971,
-      meshSize: '76.2 x 12.7',
-      wireVertical: '3 mm',
-      wireHorizontal: '3 mm',
+      wireVertical: '4 mm',
+      wireHorizontal: '4 mm',
       coating: 'PPC/TPC'
     },
     {
       height: 1800,
-      width: 2971,
+      width: 3000,
       meshSize: '76.2 x 12.7',
-      wireVertical: '3 mm',
-      wireHorizontal: '3 mm',
+      wireVertical: '4 mm',
+      wireHorizontal: '4 mm',
       coating: 'PPC/TPC'
     },
     {
-      height: 3000,
-      width: 2515,
-      meshSize: '76.2 x 12.7',
-      wireVertical: '3 mm',
-      wireHorizontal: '3 mm',
+      height: 1200,
+      width: 2500,
+      meshSize: '50 x 150',
+      wireVertical: '4 mm',
+      wireHorizontal: '4 mm',
+      coating: 'PPC/TPC'
+    },
+    {
+      height: 900,
+      width: 2500,
+      meshSize: '50 x 150',
+      wireVertical: '4 mm',
+      wireHorizontal: '4 mm',
       coating: 'PPC/TPC'
     }
   ];

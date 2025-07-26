@@ -289,7 +289,6 @@ useEffect(() => {
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Weld Mesh Fence`}>
                     <Link to="/358-anti-climb-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">358 Anti Climb fence</Link>
-                    <Link to="/unifence-fencade" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Unifence Fencade</Link>
                 </DesktopNestedDropdownMenu>
                 <DesktopNestedDropdownMenu label={`Woven Mesh`}>
                 <Link to="/chain-link-fence" className="block px-4 py-2 text-white hover:bg-primary-turquoise transition-colors">Chain Link Fence</Link>

@@ -168,21 +168,7 @@ const ProductGrid = ({ products }) => {
         image: mining,
         title: 'MINING MESH',
         description: 'Unifence offers high-quality mining mesh solutions, designed to withstand harsh conditions and provide optimal protection for mining operations.',
-      },
-      {
-        id:6,
-        image: pixel,
-        title: 'PIXEL FENCE',
-        description: 'Unifence offers innovative pixel fence solutions, providing a modern and stylish way to secure properties while maintaining visibility.',
-
-      },
-      {
-        id:7,
-        image: trellis,
-        title: 'TRELLIS WALL',
-        description: 'Unifence offers versatile trellis wall solutions, perfect for creating beautiful and functional outdoor spaces.',
-
-      },
+      }
     ];
   
     return (

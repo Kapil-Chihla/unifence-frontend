@@ -501,7 +501,7 @@ const ChainLinkFence = () => {
     <Layout>
       <Hero />
       <Features />
-      <SpecificationsTable />
+      {/* <SpecificationsTable /> */}
       <FenceAccessories/>
       <Applications/>
       <FAQ />
